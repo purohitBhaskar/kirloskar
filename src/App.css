@@ -1,0 +1,13 @@
+body{
+  /* background-color: rgb(47,47,47); */
+  background-color: rgb(73,73,73);
+  align-items: center;
+}
+
+.app{
+  align-items: center;
+}
+
+.table-class{
+  margin-right: 50px;
+}
