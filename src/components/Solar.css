@@ -1,0 +1,115 @@
+*{
+    background-color: rgb(75,75,75);
+}
+
+.solar{
+    top: 10%;
+    left: 10%;
+    height: 85vh;
+    width: 90vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    padding: 0;
+    gap: 10px;
+
+}
+
+.section{
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+#left-section{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    gap: 5px;
+}
+
+.top-left{
+    border-radius: 10px;
+    background-image: url(./solar.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bottom-left{
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1.3fr 1fr;
+    gap: 5px;
+}
+
+.bottom-left-content{
+    border-radius: 10px;
+
+}
+
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+
+.card{
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(17,17,17);
+
+}
+
+#notifications{
+    background-color: rgba(200, 199, 199, 1);
+}
+
+#right-section{
+    display: grid;
+    grid-template-rows: 1fr 0.8fr 1fr 1.3fr;
+}
+
+.rows{
+    border-radius: 10px;
+}
+
+#power-table{
+    background-color: rgba(88, 88, 88, 1);
+    ;
+}
+
+#top-card{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px;
+}
+
+.part{
+    border-radius: 10px;
+    background-color: rgb(17,17,17);
+
+}
+
+#stats-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.kwh-saving{
+    border-radius: 10px;
+    background-color:rgb(17,17,17);
+
+}
+
+#voltage-current{
+    background-color: rgb(17,17,17);
+}

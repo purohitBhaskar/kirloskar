@@ -1,17 +1,16 @@
 
 import './App.css'
-import Table from './Table'
+import { BrowserRouter as Router, Route, NavLink, Redirect, Switch } from 'react-router-dom'
+
 
 function App() {
-  
-  
+
 
   return (
-    <div className='app'>
-      <Table className="table-class"/>
-      
-    </div>
-
+    
+        <div className="hello">
+          Hello
+        </div>
   )
 }
 
