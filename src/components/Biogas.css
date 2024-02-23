@@ -1,115 +1,90 @@
-*{
-    background-color: rgb(75,75,75);
+.biogas {
+  top: 10%;
+  left: 10%;
+  height: 85vh;
+  width: 90vw;
+  width: 100%;
+  flex: 1;
+  /*pos-abs*/
+  top: 50%;
+  left: 50%;
+  /*tt*/
+  padding-top: 2vw;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  gap: 10px;
 }
-
-.biogas{
-    top: 10%;
-    left: 10%;
-    height: 85vh;
-    width: 90vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 10px;
-    padding: 0;
-    gap: 10px;
-
+.biogas .section {
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
 }
-
-.section{
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
+.biogas #left-section {
+  /* border: 1px solid red;
+  */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
 }
-
-
-#left-section{
-    /* border: 1px solid red; */
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 0;
-    gap: 5px;
+.biogas .top-left {
+  position: relative;
+  border-radius: 10px;
+  background-image: url(../assets/biogas.jpg);
+  background-size: cover;
 }
-
-.top-left{
-    border-radius: 10px;
-    background-image: url(../assets/biogas.jpg);
-    background-size: cover;
-    
+.biogas .bottom-left {
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1.3fr 1fr;
+  gap: 5px;
 }
-
-.bottom-left{
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 1.3fr 1fr;
-    gap: 5px;
+.biogas .bottom-left-content {
+  border-radius: 10px;
 }
-
-.bottom-left-content{
-    border-radius: 10px;
-
+.biogas #cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
 }
-
-
-#cards{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 5px;
+.biogas .card {
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #111;
 }
-
-.card{
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: rgb(17,17,17);
-
+.biogas #notifications {
+  background-color: rgba(200, 199, 199, 1);
 }
-
-#notifications{
-    background-color: rgba(200, 199, 199, 1);
+.biogas #right-section {
+  display: grid;
+  grid-template-rows: 1fr 0.8fr 1fr 1.3fr;
 }
-
-#right-section{
-    display: grid;
-    grid-template-rows: 1fr 0.8fr 1fr 1.3fr;
+.biogas .rows {
+  border-radius: 10px;
 }
-
-.rows{
-    border-radius: 10px;
+.biogas #power-table {
+  background-color: rgba(88, 88, 88, 1);
 }
-
-#power-table{
-    background-color: rgba(88, 88, 88, 1);
-    ;
+.biogas #top-card {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 10px;
 }
-
-#top-card{
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 10px;
+.biogas .part {
+  border-radius: 10px;
+  background-color: #111;
 }
-
-.part{
-    border-radius: 10px;
-    background-color: rgb(17,17,17);
-
+.biogas #stats-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
 }
-
-#stats-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+.biogas .kwh-saving {
+  border-radius: 10px;
+  background-color: #111;
 }
-
-.kwh-saving{
-    border-radius: 10px;
-    background-color:rgb(17,17,17);
-
-}
-
-#voltage-current{
-    background-color: rgb(17,17,17);
+.biogas #voltage-current {
+  background-color: #111;
 }

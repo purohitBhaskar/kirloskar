@@ -7,7 +7,8 @@ const Wind = () => {
             <div className="top-left" id="image-section"></div>
             <div className="bottom-left">
                 <div className="bottom-left-content" id="cards">
-                    <div className="card" id="maintenance-dates"></div>
+                    <div className="card" id="maintenance-dates">
+                    </div>
                     <div className="card" id="utilization-factor"></div>
                     <div className="card" id="notifications-alerts"></div>
                     <div className="card" id="frequency"></div>

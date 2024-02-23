@@ -1,251 +1,175 @@
-*{
-    background-color: rgb(74,75,75);
-    padding: 10px;
-
+.gensets {
+  top: 10%;
+  left: 10%;
+  height: 80vh;
+  width: 90vw;
+  width: 100%;
+  flex: 1;
+  /*pos-abs*/
+  top: 50%;
+  left: 50%;
+  /*tt*/
+  padding: 5vw;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  gap: 10px;
 }
-
-.gensets{
-    top: 10%;
-    left: 10%;
-    height: 80vh;
-    width: 90vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 10px;
-    padding: 0;
-    gap: 10px;
-
+.gensets .section {
+  border-radius: 10px;
 }
-
-.section{
-    border-radius: 10px;
+.gensets #left-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
 }
-
-#left-section{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 0;
-    gap: 5px;
+.gensets .top-left {
+  position: relative;
+  position: relative;
+  ius: 10px;
+  background-image: url(../assets/genset.png);
+  background-size: cover;
+  /* background-position: center center;
+  */
 }
+.gensets .stats {
+  background-color: rgba(255, 255, 255, 0.56);
+  width: 192px;
+  height: 50px;
+  width: 100%;
+  flex: 1;
+  /*pos-abs*/
+  bottom: 0;
+  margin-left: 20px;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 
-.top-left{
-    position: relative;
-    padding: 0;
-    border-radius: 10px;
-    background-image: url(../assets/genset.png);
-    background-size: cover;
-    /* background-position: center center; */
-
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  width: 50%;
 }
-
-.stats{
-    background-color: rgba(255,255,255,0.56);
-    width: 192px;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    margin-left: 20px;
-    padding: 5px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-   display: flex;
-   flex-direction: column;
+.gensets .bottom-left {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  border-radius: 10px;
 }
-
-
-
-
-
-.bottom-left{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
-    border-radius: 10px;
-    padding: 0px;
+.gensets .box {
+  border: 1px solid peachpuff;
+  border-radius: 10px;
+  color: white;
 }
-
-.box{
-    border: 1px solid peachpuff;
-    border-radius: 10px;
-    color: white;
+.gensets #battery-temperature {
+  grid-row: 0.5;
+  grid-column: 0.5;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-#battery-temperature{
-    grid-row: 1/2;
-    grid-column: 1/2;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
+.gensets #utilization-factor {
+  grid-row: 0.5;
+  grid-column: 0.6666666667;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-#utilization-factor{
-    grid-row: 1/2;
-    grid-column: 2/3;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
-
+.gensets #alerts-shutdown {
+  grid-row: 0.5;
+  grid-column: 0.75;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-#alerts-shutdown{
-    grid-row: 1/2;
-    grid-column: 3/4;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
-
+.gensets #frequency {
+  grid-row: 0.6666666667;
+  grid-column: 0.5;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-
-#frequency{
-    grid-row: 2/3;
-    grid-column: 1/2;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
-
+.gensets #hours-operated {
+  grid-column: 0.6666666667;
+  grid-row: 0.6666666667;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-
-#hours-operated{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
-
-
+.gensets #power-used {
+  grid-column: 0.75;
+  grid-row: 0.6666666667;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-
-#power-used{
-    grid-column: 3/4;
-    grid-row: 2/3;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
-
+.gensets #battery-voltage {
+  grid-column: 0.5;
+  grid-row: 0.75;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-
-#battery-voltage{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
-
+.gensets #charging-current {
+  grid-column: 0.6666666667;
+  grid-row: 0.75;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-
-#charging-current{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
-
+.gensets #discharging-current {
+  grid-column: 0.75;
+  grid-row: 0.75;
+  background-color: #121313;
+  border: 3px solid #878687;
 }
-
-
-#discharging-current{
-    grid-column: 3/4;
-    grid-row: 3/4;
-    background-color: rgb(18,19,19);
-    border: 3px solid rgb(135,134,135);
-
-
+.gensets #energy-consumption {
+  grid-column: 0.6666666667;
+  grid-row: 0.3333333333;
+  background-color: #121313;
+  border: none;
 }
-
-#energy-consumption{
-    grid-column: 4/6;
-    grid-row: 1/3;
-    background-color: rgb(18,19,19);
-    border: none;
+.gensets #meters {
+  grid-column: 0.5714285714;
+  grid-row: 0.25;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
 }
-
-#meters{
-    grid-column: 4/7;
-    grid-row: 1/4;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0px;
-    border: none;
+.gensets .meter-row {
+  flex: 1;
+  display: flex;
+  border-radius: 10px;
 }
-
-.meter-row {
-    flex: 1;
-    display: flex;
-    padding: 0;
-    border-radius: 10px;
-
+.gensets .meter-table {
+  flex: 1;
+  border: 1px solid peachpuff;
+  border-radius: 10px;
 }
-
-.meter-table {
-    flex: 1;
-    border: 1px solid peachpuff;
-    border-radius: 10px;
-
+.gensets #soc {
+  border: 5px solid #878687;
+  background-color: #fffefe;
 }
-
-#soc{
-    border: 5px solid rgb(135,134,135);
-    background-color: rgb(255,254,254);
+.gensets #right-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1.7fr 1.7fr;
+  border-radius: 10px;
+  gap: 5px;
 }
-
-
-#right-section{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1.7fr 1.7fr;
-    padding: 0;
-    border-radius: 10px;
-    gap: 5px;
+.gensets .right-rows {
+  border-radius: 10px;
+  color: white;
 }
-
-.right-rows{
-    border-radius: 10px;
-    color: white;
+.gensets #operating-hour-table {
+  background-color: #121313;
 }
-
-#operating-hour-table{
-    background-color: rgb(18,19,19);
-
+.gensets #health-index {
+  background-color: #121313;
 }
-
-#health-index{
-    background-color: rgb(18,19,19);
-
+.gensets #power {
+  background-color: #121313;
 }
-
-#power{
-    background-color: rgb(18,19,19);
-
+.gensets #voltage-current {
+  background-color: #121313;
 }
-
-#voltage-current{
-    background-color: rgb(18,19,19);
-
+.gensets #notifications {
+  background-color: #c8c6c6;
+  color: #4a4b4b;
 }
-
-
-#notifications{
-    background-color: rgb(200,198,198);
-    color: rgb(74, 75, 75);
-}
-
-
-

@@ -1,115 +1,90 @@
-*{
-    background-color: rgb(75,75,75);
+.wind {
+  top: 10%;
+  left: 10%;
+  height: 85vh;
+  width: 90vw;
+  width: 100%;
+  flex: 1;
+  /*pos-abs*/
+  top: 50%;
+  left: 50%;
+  /*tt*/
+  padding-top: 2vw;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  gap: 10px;
 }
-
-.wind{
-    top: 10%;
-    left: 10%;
-    height: 85vh;
-    width: 90vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 10px;
-    padding: 0;
-    gap: 10px;
-
+.wind .section {
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
 }
-
-.section{
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
+.wind #left-section {
+  /* border: 1px solid red;
+  */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
 }
-
-
-#left-section{
-    /* border: 1px solid red; */
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 0;
-    gap: 5px;
+.wind .top-left {
+  position: relative;
+  border-radius: 10px;
+  background-image: url(../assets/wind.jpg);
+  background-size: cover;
 }
-
-.top-left{
-    border-radius: 10px;
-    background-image: url(./wind.jpg);
-    background-size: cover;
-    
+.wind .bottom-left {
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1.3fr 1fr;
+  gap: 5px;
 }
-
-.bottom-left{
-    border-radius: 10px;
-    display: grid;
-    grid-template-rows: 1.3fr 1fr;
-    gap: 5px;
+.wind .bottom-left-content {
+  border-radius: 10px;
 }
-
-.bottom-left-content{
-    border-radius: 10px;
-
+.wind #cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
 }
-
-
-#cards{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 5px;
+.wind .card {
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #111;
 }
-
-.card{
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: rgb(17,17,17);
-
+.wind #notifications {
+  background-color: rgba(200, 199, 199, 1);
 }
-
-#notifications{
-    background-color: rgba(200, 199, 199, 1);
+.wind #right-section {
+  display: grid;
+  grid-template-rows: 1fr 0.8fr 1fr 1.3fr;
 }
-
-#right-section{
-    display: grid;
-    grid-template-rows: 1fr 0.8fr 1fr 1.3fr;
+.wind .rows {
+  border-radius: 10px;
 }
-
-.rows{
-    border-radius: 10px;
+.wind #power-table {
+  background-color: rgba(88, 88, 88, 1);
 }
-
-#power-table{
-    background-color: rgba(88, 88, 88, 1);
-    ;
+.wind #top-card {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 10px;
 }
-
-#top-card{
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 10px;
+.wind .part {
+  border-radius: 10px;
+  background-color: #111;
 }
-
-.part{
-    border-radius: 10px;
-    background-color: rgb(17,17,17);
-
+.wind #stats-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
 }
-
-#stats-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+.wind .kwh-saving {
+  border-radius: 10px;
+  background-color: #111;
 }
-
-.kwh-saving{
-    border-radius: 10px;
-    background-color:rgb(17,17,17);
-
-}
-
-#voltage-current{
-    background-color: rgb(17,17,17);
+.wind #voltage-current {
+  background-color: #111;
 }

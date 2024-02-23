@@ -1,0 +1,166 @@
+.overview{
+    
+    top: 10%;
+    left: 10%;
+    height: 85vh;
+    width: 90vw;
+    width: 100%;
+ 
+    top: 50%;
+    left: 50%;
+    padding: 2vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+}
+
+.section{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px
+
+}
+
+#top-left{
+    background-color: rgb(255, 254, 254);
+}
+
+.left-content{
+    border-radius: 10px;
+    
+}
+
+#bottom-left{
+    height: 100%;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#right-section{
+    display: grid;
+    grid-template-rows: 1fr 1.7fr 1.5fr;
+}
+
+.right-grids{
+    display: grid;
+    grid-template-columns: 1.713fr 1fr;
+    gap: 10px;
+}
+
+.top-grid{
+    border-radius: 10px;
+    background-color: rgb(17,17,18);
+}
+
+#middle-grid{
+    display: grid;
+    grid-template-columns: 1fr 2.6fr;
+}
+
+.middle-left, middle-right{
+}
+
+.middle-right{
+    display: grid;
+    grid-template-rows: 1.142fr 1fr;
+    gap: 10px;
+}
+
+.middle-right-card-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px    ;
+    border-radius: 10px;
+}
+
+.energy-card {
+    background-color: rgb(17,17,18);
+    border-radius: 10px;
+}
+
+.alerts-card {
+    background-color: rgb(17,17,18);
+    border-radius: 10px;
+}
+
+.savings-card {
+    background-color: rgb(17,17,18);
+    border-radius: 10px;
+}
+
+.middle-right-pie-chart{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.middle-left{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.cards-middle-left{
+    border-radius: 10px;
+}
+
+#bottom-left{
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 5px;
+    padding-top: 33px;
+}
+
+
+
+#bottom-left-row2{
+    background-color: rgb(17,17,18);
+    
+}
+
+#bottom-left-row2{
+    position: absolute;
+}
+
+#bottom-left-row3{
+    background-color: rgb(255, 254, 254);
+}
+
+#bottom-left-row4{
+    background-color: rgb(255, 254, 254);
+}
+
+#bottom-left-row5{
+    background-color: rgb(255, 254, 254);
+}
+
+#bottom-left-row6{
+    background-color: rgb(255, 254, 254);
+}
+
+#bottom-left-row7{
+    background-color: rgb(255, 254, 254);
+}
+
+#bottom-left-row8{
+    background-color: rgb(255, 254, 254);
+}
+
+.right-grids{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bottom-right{
+    border-radius: 10px;
+    background-color: rgb(17,17,18);
+
+}
+
+.cards-middle-left{
+    background-color: rgb(17,17,18);
+}
+
+

@@ -12,8 +12,7 @@ import "./App.css"
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
+        <nav className='navbar'>
           <ul>
             <li><NavLink to="/overview" className="nav-link">Overview</NavLink></li>
             <li><NavLink to="/solar" className="nav-link">Solar</NavLink></li>
@@ -37,7 +36,6 @@ function App() {
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/" element={<Navigate to="/overview" />} />
         </Routes>
-      </div>
     </Router>
   );
 }
