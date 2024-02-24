@@ -1,30 +1,24 @@
-.navbar {
+header {
   width: 100%;
-  background-color: rgb(36 36 36);
-  overflow: hidden;
+  height: 67px;
+  background: #121212;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 50px;
+
 }
 
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-}
 
-.navbar ul li {
-  float: left;
-}
 
-.navbar ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+header a {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* 109.091% */
+  letter-spacing: 0.44px;
   text-decoration: none;
-}
-
-.navbar ul li:hover {
-  background-color: #333;
-}
-
-.active {
-  background-color: #444;
 }

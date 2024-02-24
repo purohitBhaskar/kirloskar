@@ -1,53 +1,42 @@
 import React from 'react'
-import './Overview.css'
-import OverviewTable from './OverviewTable'
+import "../styles/Overview.css"
+
 const Overview = () => {
-    return (
-        <div className="overview">
-            <div className="section" id='left-element'>
-                <div className="left-content" id="top-left"></div>
-                <div className="left-content" id="bottom-left">
-                    <div className='bottom-left-row' id="bottom-left-row1">Notifications</div>
-                    <div className='bottom-left-row' id="bottom-left-row2">
-                        
-                    </div>
-                    <div className='bottom-left-row' id="bottom-left-row3">1</div>
-                    <div className='bottom-left-row' id="bottom-left-row4">1</div>
-                    <div className='bottom-left-row' id="bottom-left-row5">1</div>
-                    <div className='bottom-left-row' id="bottom-left-row6">1</div>
-                    <div className='bottom-left-row' id="bottom-left-row7">1</div>
-                    <div className='bottom-left-row' id="bottom-left-row8">1</div>
-                </div>
-
-
-            </div>
-            <div className="section" id='right-section'>
-                <div className="right-grids">
-                    <div className="top-grid" id="top-grid-pie-chart"></div>
-                    <div className="top-grid" id="top-grid-total-energy-generated"></div>
-                </div>
-                <div className="right-grids" id='middle-grid'>
-                    <div className="middle-left">
-                        <div className="cards-middle-left"></div>
-                        <div className="cards-middle-left"></div>
-                        <div className="cards-middle-left"></div>
-                    </div>
-                    <div className="middle-right">
-                        <div className="middle-right-card-section">
-                            <div className="energy-card"></div>
-                            <div className="alerts-card"></div>
-                            <div className="savings-card"></div>
-                        </div>
-                        <div className="middle-right-pie-chart"></div>
-                    </div>
-                </div>
-                <div className="right-grids">
-                    <div className="bottom-right" id="power"></div>
-                    <div className="bottom-right" id="avg-current"></div>
-                </div>
-            </div>
+  return (
+    <div className="overview-section">
+      <div id="left-section" className="sections">
+        <div className="left-content" id="top-left">
+          image
         </div>
-    )
+        <div className="left-content" id="bottom-left"></div>
+      </div>
+      <div id="right-section" className="sections">
+        <div className="right-content" id="row1">
+          <div className="row1-cards" id="bar-graph"></div>
+          <div className="row1-cards" id="total-energy-card"></div>
+        </div>
+        <div className="right-content" id="row2">
+          <div className="cards-vertical">
+            <div className="operating-hours"></div>
+            <div className="mains"></div>
+            <div className="gensets"></div>
+          </div>
+          <div className="cards-horizontal">
+            <div className="top-cards">
+              <div className="energy-SOC"></div>
+              <div className="alerts"></div>
+              <div className="savings"></div>
+            </div>
+            <div className="pie-chart"></div>
+          </div>
+        </div>
+        <div className="right-content" id="row3">
+          <div className="power-table"></div>
+          <div className="avg-current"></div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Overview

@@ -1,0 +1,32 @@
+.overview-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+.overview-section *{
+    /* apply to every item in overview section */
+    gap: 9px;
+    border-radius: 10px;
+}
+
+.overview-section #left-section{
+    display: grid;
+    grid-template-rows: 582px 329px;
+    border: 1px solid green
+
+}
+
+.overview-section .left-content{
+    border: 1px solid white;
+}
+
+.overview-section #right-section{
+    display: grid;
+    grid-template-rows: 198px auto 161px;
+}
+
+.overview-section .right-content{
+    border: 1px solid white;
+}
