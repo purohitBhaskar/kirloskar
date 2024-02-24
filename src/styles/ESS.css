@@ -1,0 +1,13 @@
+.ess-container {
+
+    display: grid;
+    grid-template-columns: 623px 520px;
+    gap: 10px;
+    margin: 18px 12px;
+}
+
+.ess-container * {
+    /* apply to every item in ess container */
+    gap: 12px;
+    border-radius: 10px;
+}

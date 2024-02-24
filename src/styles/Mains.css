@@ -1,0 +1,152 @@
+.mains-container {
+
+    display: grid;
+    grid-template-columns: 623px 520px;
+    gap: 10px;
+    margin: 18px 12px;
+}
+
+.mains-container * {
+    /* apply to every item in mains container */
+    gap: 12px;
+    border-radius: 10px;
+}
+
+.mains-left-section {
+    display: grid;
+    grid-template-rows: 353px 177px 168px;
+    gap: 14px;
+}
+
+.mains-container #mains-img {
+    border-radius: 10px;
+    border: 1px solid #4F4F4F;
+    background: url("../assets/mains.jpg");
+    background-size: contain;
+    background-position: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container #mains-vertical-card {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    gap: 8px;
+}
+
+
+.mains-container .mains-vertical-card1,
+.mains-vertical-card2,
+.mains-vertical-card3,
+.mains-vertical-card4 {
+    border-radius: 10px;
+    border: 1px solid #1D1D1E;
+    background: #141414;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container #notifications {
+    border-radius: 10px;
+    background: #C8C7C7;
+}
+
+.mains-container .mains-right-section {
+    display: grid;
+    grid-template-rows: 205px 127px 142px auto;
+    gap: 8px;
+}
+
+.mains-container .mains-right-row1 {
+    display: grid;
+    grid-template-columns: 353px 167.413px;
+    gap: 8px;
+}
+
+.mains-container .mains-right-row2 {
+    grid-template-rows: 35px 35px 35px;
+}
+
+.mains-container .mains-power-heading {
+    border-radius: 10px 10px 0px 0px;
+    background: #121212;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container .mains-kW {
+    background: #272728;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.mains-container .mains-bar-graph {
+
+    border-radius: 10px;
+    background: #141414;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container .mains-yesterday-stats {
+    border-radius: 10px;
+    border: 1px solid #1D1D1E;
+    background: #141414;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container .mains-right-row2 {
+    border-radius: 10px;
+    background: #585858;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container .mains-right-row3 {
+    display: grid;
+    grid-template-columns: 126px 126px 126px 126px;
+    gap: 8px;
+}
+
+.mains-container .mains-operating-hours,
+.mains-total-generation,
+.mains-total-utilization,
+.mains-total-savings {
+    background: #141414;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.mains-container .mains-right-row4 {
+    display: grid;
+    grid-template-rows: 65px 50px 50px 50px;
+    gap: 2px;
+}
+
+.mains-container .current-voltage-heading {
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #272728;
+    background: #121212;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container .current-voltage-row1 {
+    border: 1px solid #272728;
+    background: #1D1D1E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container .current-voltage-row2 {
+    border: 1px solid #272728;
+    background: #272728;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mains-container .mains-kVA {
+    border-radius: 0px 0px 10px 10px;
+    background: #272728;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.mains-container .current-voltage-row3 {
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid #272728;
+    background: #323233;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
