@@ -1,0 +1,152 @@
+.solar-container {
+
+    display: grid;
+    grid-template-columns: 623px 520px;
+    gap: 10px;
+    margin: 18px 12px;
+}
+
+.solar-container * {
+    /* apply to every item in solar container */
+    gap: 12px;
+    border-radius: 10px;
+}
+
+.solar-left-section {
+    display: grid;
+    grid-template-rows: 353px 177px 168px;
+    gap: 14px;
+}
+
+.solar-container #solar-img {
+    border-radius: 10px;
+    border: 1px solid #4F4F4F;
+    background: url("../assets/solar.jpg");
+    background-size: contain;
+    background-position: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container #solar-vertical-card {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    gap: 8px;
+}
+
+
+.solar-container .solar-vertical-card1,
+.solar-vertical-card2,
+.solar-vertical-card3,
+.solar-vertical-card4 {
+    border-radius: 10px;
+    border: 1px solid #1D1D1E;
+    background: #141414;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container #notifications {
+    border-radius: 10px;
+    background: #C8C7C7;
+}
+
+.solar-container .solar-right-section {
+    display: grid;
+    grid-template-rows: 205px 127px 142px auto;
+    gap: 8px;
+}
+
+.solar-container .solar-right-row1 {
+    display: grid;
+    grid-template-columns: 353px 167.413px;
+    gap: 8px;
+}
+
+.solar-container .solar-right-row2 {
+    grid-template-rows: 35px 35px 35px;
+}
+
+.solar-container .solar-power-heading {
+    border-radius: 10px 10px 0px 0px;
+    background: #121212;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container .solar-kW {
+    background: #272728;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.solar-container .solar-bar-graph {
+
+    border-radius: 10px;
+    background: #141414;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container .solar-yesterday-stats {
+    border-radius: 10px;
+    border: 1px solid #1D1D1E;
+    background: #141414;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container .solar-right-row2 {
+    border-radius: 10px;
+    background: #585858;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container .solar-right-row3 {
+    display: grid;
+    grid-template-columns: 126px 126px 126px 126px;
+    gap: 8px;
+}
+
+.solar-container .solar-operating-hours,
+.solar-total-generation,
+.solar-total-utilization,
+.solar-total-savings {
+    background: #141414;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.solar-container .solar-right-row4 {
+    display: grid;
+    grid-template-rows: 65px 50px 50px 50px;
+    gap: 2px;
+}
+
+.solar-container .current-voltage-heading {
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #272728;
+    background: #121212;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container .current-voltage-row1 {
+    border: 1px solid #272728;
+    background: #1D1D1E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container .current-voltage-row2 {
+    border: 1px solid #272728;
+    background: #272728;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.solar-container .solar-kVA {
+    border-radius: 0px 0px 10px 10px;
+    background: #272728;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.solar-container .current-voltage-row3 {
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid #272728;
+    background: #323233;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
