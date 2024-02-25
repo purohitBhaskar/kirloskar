@@ -1,8 +1,11 @@
 import React from 'react'
+import "../styles/Alerts.css"
 
 const Alerts = () => {
   return (
-    <div>Alerts</div>
+    <div className='alerts-section'>
+
+    </div>
   )
 }
 
