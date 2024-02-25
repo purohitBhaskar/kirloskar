@@ -1,9 +1,9 @@
 .ess-container {
 
     display: grid;
-    grid-template-columns: 625px 521px;
-    gap: 14px;
-    margin: 18px 12px;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 15px;
+    margin: 20px 12px;
 }
 
 .ess-container * {
@@ -15,8 +15,9 @@
 
 .ess-container .ess-left-section {
     display: grid;
-    grid-template-rows: 374px auto;
-    gap: 19px;
+    grid-template-rows: 1.4fr 0.8fr;
+    /* 319 382 */
+    gap: 13px;
 }
 
 .ess-container .ess-top-left {
@@ -31,13 +32,14 @@
 
 .ess-container .ess-bottom-left {
     display: grid;
-    grid-template-columns: auto 257px;
+    grid-template-columns: 0.5fr 1fr;
 }
 
 .ess-container .ess-energy-meters {
     display: grid;
-    grid-template-rows: 147px 172px;
+    grid-template-rows: .85fr 1fr;
     gap: 13px;
+    width: 100%;
 
 }
 
@@ -55,20 +57,24 @@
 
 .ess-container .ess-stat-cards {
     display: grid;
-    grid-template-columns: repeat(3, 118px);
-    grid-template-rows: repeat(3, 105px);
-    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 6px;
 }
 
 .ess-container .ess-stat-card {
     background: #121212;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 118px;
+    height: 105px;
 
 }
 
 .ess-container .ess-right-section {
     display: grid;
-    grid-template-rows: 106px 93px 127px auto 169px;
+    grid-template-rows: 110px 100px 185px auto auto;
+    /* grid-template-rows: 0.15fr .136fr 0.186fr 0.2727fr 0.24fr; */
+    grid-template-rows: calc(10px / 711 * 1fr) calc(105px / 711 * 1fr) calc(140px / 711 * 1fr) calc(186px / 711 * 1fr) calc(170px / 711 * 1fr);
     gap: 8px;
 }
 
@@ -83,18 +89,22 @@
     border-radius: 10px;
     background: #141414;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
 }
 
 .ess-container .ess-right-row3 {
     border-radius: 10px;
     background: #585858;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 3px;
+    margin-top: 10px;
 }
 
 .ess-container .ess-right-row3 {
     display: grid;
-    grid-template-rows: 35px 35px 35px;
-    gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+    padding-bottom: 8px;
 }
 
 .ess-container .ess-right-row-power-phase {
@@ -115,10 +125,15 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.ess-container .ess-right-row-power-phase+.ess-right-row-kW {
+    margin-top: 5px;
+}
+
 .ess-container .ess-right-row4 {
     display: grid;
     grid-template-rows: 55px 43px 43px 43px;
     gap: 2px;
+    margin-top: 10px;
 }
 
 .ess-container .ess-voltage-current-phase-heading {
@@ -156,8 +171,7 @@
 
 .ess-container .ess-notification-heading {
     display: flex;
-    width: 181.173px;
-    height: 21.381px;
+
     flex-direction: column;
     justify-content: flex-end;
     flex-shrink: 0;
@@ -172,28 +186,30 @@
     margin-left: 11px;
 }
 
-.ess-container .ess-notification-table{
+.ess-container .ess-notification-table {
     display: grid;
     grid-template-rows: 33px 33px 33px;
-    padding: 8px;
+    padding: 5px;
     grid-row-gap: 10px;
+    gap: 15px;
 }
 
-.ess-container .ess-notification-table-heading{
+.ess-container .ess-notification-table-heading {
     background: #010D25;
     border-radius: 0px;
 }
 
-.ess-container .ess-notification-table-row-1{
+.ess-container .ess-notification-table-row-1 {
     background: #FFF;
     border-radius: 0px;
 }
 
-.ess-container .ess-notification-table-row-2{
+.ess-container .ess-notification-table-row-2 {
     background: #FFF;
     border-radius: 0;
 }
 
-.ess-container .ess-notification-table-row-1 + .ess-notification-table-row-2{
+.ess-container .ess-notification-table-row-1+.ess-notification-table-row-2 {
     margin-top: 0px;
+    /* gap: 5px; */
 }

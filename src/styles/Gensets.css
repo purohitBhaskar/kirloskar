@@ -1,9 +1,9 @@
 .gensets-container {
 
     display: grid;
-    grid-template-columns: 625px 521px;
-    gap: 14px;
-    margin: 18px 12px;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 15px;
+    margin: 20px 12px;
 }
 
 .gensets-container * {
@@ -15,8 +15,9 @@
 
 .gensets-container .gensets-left-section {
     display: grid;
-    grid-template-rows: 374px auto;
-    gap: 19px;
+    grid-template-rows: 1.4fr 0.8fr;
+    /* 319 382 */
+    gap: 13px;
 }
 
 .gensets-container .gensets-top-left {
@@ -31,13 +32,14 @@
 
 .gensets-container .gensets-bottom-left {
     display: grid;
-    grid-template-columns: auto 257px;
+    grid-template-columns: 0.5fr 1fr;
 }
 
 .gensets-container .gensets-energy-meters {
     display: grid;
-    grid-template-rows: 147px 172px;
+    grid-template-rows: .85fr 1fr;
     gap: 13px;
+    width: 100%;
 
 }
 
@@ -55,21 +57,25 @@
 
 .gensets-container .gensets-stat-cards {
     display: grid;
-    grid-template-columns: repeat(3, 118px);
-    grid-template-rows: repeat(3, 105px);
-    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 6px;
 }
 
 .gensets-container .gensets-stat-card {
     background: #121212;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 118px;
+    height: 105px;
 
 }
 
 .gensets-container .gensets-right-section {
     display: grid;
-    grid-template-rows: 106px 93px 127px auto 169px;
-    gap: 8px;
+    grid-template-rows: 110px 100px 185px auto auto;
+    /* grid-template-rows: 0.15fr .136fr 0.186fr 0.2727fr 0.24fr; */
+    grid-template-rows: calc(10px / 711 * 1fr) calc(105px / 711 * 1fr) calc(140px / 711 * 1fr) calc(186px / 711 * 1fr) calc(170px / 711 * 1fr);
+    gap: 5px;
 }
 
 
@@ -83,18 +89,22 @@
     border-radius: 10px;
     background: #141414;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* margin-top: 10px; */
 }
 
 .gensets-container .gensets-right-row3 {
     border-radius: 10px;
     background: #585858;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 3px;
+    /* margin-top: 10px; */
 }
 
 .gensets-container .gensets-right-row3 {
     display: grid;
-    grid-template-rows: 35px 35px 35px;
-    gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+    padding-bottom: 8px;
 }
 
 .gensets-container .gensets-right-row-power-phase {
@@ -115,10 +125,16 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.gensets-container .gensets-right-row-power-phase+.gensets-right-row-kW {
+    margin-top: 5px;
+}
+
 .gensets-container .gensets-right-row4 {
     display: grid;
     grid-template-rows: 55px 43px 43px 43px;
     gap: 2px;
+    /* margin-top: 10px; */
+    border-radius: 0px;
 }
 
 .gensets-container .gensets-voltage-current-phase-heading {
@@ -132,12 +148,14 @@
     border: 1px solid #272728;
     background: #1D1D1E;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
 }
 
 .gensets-container .gensets-l2-phase {
     border: 1px solid #272728;
     background: #272728;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
 }
 
 .gensets-container .gensets-l3-phase {
@@ -156,8 +174,7 @@
 
 .gensets-container .gensets-notification-heading {
     display: flex;
-    width: 181.173px;
-    height: 21.381px;
+
     flex-direction: column;
     justify-content: flex-end;
     flex-shrink: 0;
@@ -172,28 +189,30 @@
     margin-left: 11px;
 }
 
-.gensets-container .gensets-notification-table{
+.gensets-container .gensets-notification-table {
     display: grid;
     grid-template-rows: 33px 33px 33px;
-    padding: 8px;
+    padding: 5px;
     grid-row-gap: 10px;
+    gap: 15px;
 }
 
-.gensets-container .gensets-notification-table-heading{
+.gensets-container .gensets-notification-table-heading {
     background: #010D25;
     border-radius: 0px;
 }
 
-.gensets-container .gensets-notification-table-row-1{
+.gensets-container .gensets-notification-table-row-1 {
     background: #FFF;
     border-radius: 0px;
 }
 
-.gensets-container .gensets-notification-table-row-2{
+.gensets-container .gensets-notification-table-row-2 {
     background: #FFF;
     border-radius: 0;
 }
 
-.gensets-container .gensets-notification-table-row-1 + .gensets-notification-table-row-2{
+.gensets-container .gensets-notification-table-row-1+.gensets-notification-table-row-2 {
     margin-top: 0px;
+    /* gap: 5px; */
 }
