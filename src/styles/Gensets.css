@@ -1,4 +1,4 @@
-.ess-container {
+.gensets-container {
 
     display: grid;
     grid-template-columns: 625px 521px;
@@ -6,155 +6,155 @@
     margin: 18px 12px;
 }
 
-.ess-container * {
-    /* apply to every item in ess container */
+.gensets-container * {
+    /* apply to every item in gensets container */
     gap: 12px;
     border-radius: 10px;
 }
 
 
-.ess-container .ess-left-section {
+.gensets-container .gensets-left-section {
     display: grid;
     grid-template-rows: 374px auto;
     gap: 19px;
 }
 
-.ess-container .ess-top-left {
+.gensets-container .gensets-top-left {
     border-radius: 10px;
     border: 1px solid #2C2B2B;
-    background: url('../assets/ess.jpg'), lightgray 50%;
+    background: url('../assets/gensets.png'), lightgray 50%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-bottom-left {
+.gensets-container .gensets-bottom-left {
     display: grid;
     grid-template-columns: auto 257px;
 }
 
-.ess-container .ess-energy-meters {
+.gensets-container .gensets-energy-meters {
     display: grid;
     grid-template-rows: 147px 172px;
     gap: 13px;
 
 }
 
-.ess-container .ess-energy-consumption-meter {
+.gensets-container .gensets-energy-consumption-meter {
     background: #121212;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.ess-container .ess-soc-meter {
+.gensets-container .gensets-soc-meter {
     border-radius: 10px;
     border: 4px solid #868686;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-stat-cards {
+.gensets-container .gensets-stat-cards {
     display: grid;
     grid-template-columns: repeat(3, 118px);
     grid-template-rows: repeat(3, 105px);
     gap: 8px;
 }
 
-.ess-container .ess-stat-card {
+.gensets-container .gensets-stat-card {
     background: #121212;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
-.ess-container .ess-right-section {
+.gensets-container .gensets-right-section {
     display: grid;
     grid-template-rows: 106px 93px 127px auto 169px;
     gap: 8px;
 }
 
 
-.ess-container .ess-right-row1 {
+.gensets-container .gensets-right-row1 {
     border-radius: 10px;
     background: #121212;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-right-row2 {
+.gensets-container .gensets-right-row2 {
     border-radius: 10px;
     background: #141414;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-right-row3 {
+.gensets-container .gensets-right-row3 {
     border-radius: 10px;
     background: #585858;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-right-row3 {
+.gensets-container .gensets-right-row3 {
     display: grid;
     grid-template-rows: 35px 35px 35px;
     gap: 5px;
 }
 
-.ess-container .ess-right-row-power-phase {
+.gensets-container .gensets-right-row-power-phase {
     border-radius: 10px 10px 0px 0px;
     background: #121212;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-right-row-kW {
+.gensets-container .gensets-right-row-kW {
     background: #272728;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
 }
 
-.ess-container .ess-right-row-kVA {
+.gensets-container .gensets-right-row-kVA {
     border-radius: 0px 0px 10px 10px;
     background: #272728;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-right-row4 {
+.gensets-container .gensets-right-row4 {
     display: grid;
     grid-template-rows: 55px 43px 43px 43px;
     gap: 2px;
 }
 
-.ess-container .ess-voltage-current-phase-heading {
+.gensets-container .gensets-voltage-current-phase-heading {
     border-radius: 10px 10px 0px 0px;
     border: 1px solid #272728;
     background: #121212;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-l1-phase {
+.gensets-container .gensets-l1-phase {
     border: 1px solid #272728;
     background: #1D1D1E;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-l2-phase {
+.gensets-container .gensets-l2-phase {
     border: 1px solid #272728;
     background: #272728;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-l3-phase {
+.gensets-container .gensets-l3-phase {
     border-radius: 0px 0px 10px 10px;
     border: 1px solid #272728;
     background: #323233;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-right-row5 {
+.gensets-container .gensets-right-row5 {
     border-radius: 10px;
     border: 1px solid #A8A8A8;
     background: #C8C7C7;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container .ess-notification-heading {
+.gensets-container .gensets-notification-heading {
     display: flex;
     width: 181.173px;
     height: 21.381px;
@@ -172,28 +172,28 @@
     margin-left: 11px;
 }
 
-.ess-container .ess-notification-table{
+.gensets-container .gensets-notification-table{
     display: grid;
     grid-template-rows: 33px 33px 33px;
     padding: 8px;
     grid-row-gap: 10px;
 }
 
-.ess-container .ess-notification-table-heading{
+.gensets-container .gensets-notification-table-heading{
     background: #010D25;
     border-radius: 0px;
 }
 
-.ess-container .ess-notification-table-row-1{
+.gensets-container .gensets-notification-table-row-1{
     background: #FFF;
     border-radius: 0px;
 }
 
-.ess-container .ess-notification-table-row-2{
+.gensets-container .gensets-notification-table-row-2{
     background: #FFF;
     border-radius: 0;
 }
 
-.ess-container .ess-notification-table-row-1 + .ess-notification-table-row-2{
+.gensets-container .gensets-notification-table-row-1 + .gensets-notification-table-row-2{
     margin-top: 0px;
 }

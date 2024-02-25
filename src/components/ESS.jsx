@@ -28,8 +28,26 @@ const ESS = () => {
       <div className="ess-right-section">
         <div className="ess-right-row1">1</div>
         <div className="ess-right-row2">1</div>
-        <div className="ess-right-row3">1</div>
-        <div className="ess-right-row4">1</div>
+        <div className="ess-right-row3">
+          <div className="ess-right-row-power-phase"></div>
+          <div className="ess-right-row-kW"></div>
+          <div className="ess-right-row-kVA"></div>
+
+        </div>
+        <div className="ess-right-row4">
+          <div className="ess-voltage-current-phase-heading"></div>
+          <div className="ess-l1-phase"></div>
+          <div className="ess-l2-phase"></div>
+          <div className="ess-l3-phase"></div>
+        </div>
+        <div className="ess-right-row5">
+          <div className="ess-notification-heading">Notifications</div>
+          <div className="ess-notification-table">
+            <div className="ess-notification-table-heading"></div>
+            <div className="ess-notification-table-row-1"></div>
+            <div className="ess-notification-table-row-2"></div>
+          </div>
+        </div>
       </div>
     </div>
   )
