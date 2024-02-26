@@ -1,7 +1,7 @@
 .ess-container {
 
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 15px;
     margin: 20px 12px;
 }
@@ -15,7 +15,7 @@
 
 .ess-container .ess-left-section {
     display: grid;
-    grid-template-rows: 1.4fr 0.8fr;
+    grid-template-rows: 1.4fr 1.2fr;
     /* 319 382 */
     gap: 13px;
 }
@@ -31,7 +31,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ess-container  .capacity-status-strip {
+.ess-container .capacity-status-strip {
     position: absolute;
     width: 295.66px;
     height: 78px;
@@ -54,7 +54,7 @@
     color: #FFF;
 }
 
-.ess-container  .capacity-status-strip-total-capacity {
+.ess-container .capacity-status-strip-total-capacity {
 
     margin-top: 7px;
     margin-left: 12px;
@@ -93,6 +93,7 @@
 .ess-container .ess-bottom-left {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
+    padding-top: 5px;
 }
 
 .ess-container .ess-energy-meters {
@@ -111,16 +112,26 @@
 .ess-container .ess-soc-meter {
     border-radius: 10px;
     border: 4px solid #868686;
-    background: #FFF;
+    /* background: #FFF; */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .ess-container .ess-stat-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1.2fr);
+    grid-template-rows: repeat(3, 1.2fr);
     gap: 6px;
+    margin-top: 8px;
+    padding: 0;
+    height: 101%;
 }
+
+/* .ess-container #ess-stat-card-2{
+    border: 4px solid #F77F7F;
+    .utilization-factor-stat{
+        color:#F12D2D;
+    }
+} */
 
 .ess-container .ess-stat-card {
     background: #121212;
@@ -275,300 +286,328 @@
     /* gap: 5px; */
 }
 
-.ess-container .thermometer{
+.ess-container .thermometer {
     height: 0;
     width: 0;
     margin-left: 5px;
 }
 
-.ess-container .battery-temp{
+.ess-container .battery-temp {
     height: 0;
     width: 0;
     margin-left: 5px;
     margin-top: 30px;
 }
 
-.ess-container .reading{
+.ess-container .reading {
     display: flex;
-width: 31px;
-height: 24px;
-flex-direction: row;
-justify-content: flex-end;
-flex-shrink: 0;
-color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-left: 65px;
-margin-top: 0;
+    width: 31px;
+    height: 24px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #0D81CD;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 65px;
+    margin-top: 0;
 }
 
-.ess-container .ess-stat-card{
+.ess-container .ess-stat-card {
     position: relative;
 
 
 }
 
-.ess-container .utilization-factor{
+.ess-container .utilization-factor {
     position: absolute;
     bottom: 0;
     left: 5px;
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 
-.ess-container .utilization-factor-stat{
+.ess-container .utilization-factor-stat {
     position: absolute;
     top: 5px;
     right: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.ess-container .alerts-shutdown{
+.ess-container .alerts-shutdown {
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-.ess-container .warning-stat{
+.ess-container .warning-stat {
     position: absolute;
     top: 5px;
     right: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.ess-container .alerts-shutdown-stat{
+.ess-container .alerts-shutdown-stat {
     position: absolute;
-    right:5px;
-    bottom:5px;
-    
+    right: 5px;
+    bottom: 5px;
+
 }
 
-.ess-container .discharging-levels{
+.ess-container .discharging-levels {
     position: absolute;
     bottom: 5px;
     left: 5px;
 
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.ess-container .discharging-level-reading{
+.ess-container .discharging-level-reading {
     position: absolute;
-    top:5px;
+    top: 5px;
     right: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
 }
 
-.ess-container .frequency-symbol{
+.ess-container .frequency-symbol {
     position: absolute;
     background: url("../assets/frequency.png");
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
 
 }
 
-.ess-container .frequency-title{
+.ess-container .frequency-title {
     position: absolute;
     bottom: 5px;
     left: 5px;
 }
 
-.ess-container .frequency-value{
+.ess-container .frequency-value {
     position: absolute;
     right: 5px;
     top: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.ess-container .clock-symbol{
+.ess-container .clock-symbol {
     position: absolute;
- 
+
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
-
-}
-
-.ess-container .hours-operated-title{
-    position: absolute;
-    bottom: 5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
     left: 5px;
-    color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-
-.ess-container .hours-operated-value{
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-
-.ess-container .clock-symbol{
-    position: absolute;
- 
-    width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
 
 }
 
-.ess-container .power-used-title{
+.ess-container .hours-operated-title {
     position: absolute;
     bottom: 5px;
     left: 5px;
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.ess-container .power-used-value{
+.ess-container .hours-operated-value {
     position: absolute;
     right: 5px;
     top: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-
-.ess-container .power-symbol{
+.ess-container .clock-symbol {
     position: absolute;
- 
+
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
 
 }
 
-.ess-container .battery-voltage-title{
+.ess-container .power-used-title {
     position: absolute;
     bottom: 5px;
     left: 5px;
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.ess-container .battery-voltage-value{
+.ess-container .power-used-value {
     position: absolute;
     right: 5px;
     top: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 
-.ess-container .battery-voltage-symbol{
+.ess-container .power-symbol {
     position: absolute;
- 
+
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
 
 }
 
-.ess-container .battery-level-title{
+.ess-container .battery-voltage-title {
     position: absolute;
     bottom: 5px;
     left: 5px;
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.ess-container .battery-level-value{
+.ess-container .battery-voltage-value {
     position: absolute;
     right: 5px;
     top: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 
-.ess-container .battery-level-symbol{
+.ess-container .battery-voltage-symbol {
     position: absolute;
- 
+
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
 
 }
+
+.ess-container .battery-level-title {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ess-container .battery-level-value {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #0D81CD;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.ess-container .battery-level-symbol {
+    position: absolute;
+
+    width: 30px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
+
+}
+
+.ess-container .ess-soc-meter {
+    position: relative;
+    height: 100%;
+    color: black;
+    background: url('../assets/fuel-meter.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.ess-container .ess-energy-consumption-meter {
+    position: relative;
+    height: 100%;
+    color: black;
+    background: url('../assets/energy-consumption-meter.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #010D25;
+}
+
+/* .ess-container .soc-meter-img{
+    position: absolute;
+    
+
+} */
 
 
 /* .ess-container . */
@@ -576,3 +615,188 @@ left:5px;
 /* 
 
  */
+
+.ess-container .ess-notification-table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ess-container .ess-notification-table-heading div {
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+}
+
+.ess-container .ess-notification-table-row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.ess-container .ess-notification-table-row-1 div {
+    flex: 1;
+    text-align: center;
+    color: #4A4A4A;
+    ;
+}
+
+.ess-container .ess-notification-table-row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ess-container .ess-notification-table-row-2 div {
+    flex: 1;
+    text-align: center;
+    color: #4A4A4A;
+    ;
+}
+
+.ess-container .ess-right-row-kVA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ess-container .ess-right-row-kW {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.ess-container .ess-right-row-power-phase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.ess-container .ess-voltage-current-phase-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ess-container .ess-voltage-current-phase-heading div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+
+.ess-container .ess-l1-phase {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ess-container .ess-l1-phase div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 60px;
+}
+
+
+.ess-container .ess-l2-phase {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ess-container .ess-l2-phase div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 60px;
+}
+
+.ess-container #current-heading {
+    margin-right: 50px;
+    padding: 0;
+}
+
+.ess-container .ess-l3-phase {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ess-container .ess-l3-phase div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 60px;
+}
+
+.ess-container .ess-operating-hours-total-gen-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.ess-container .ess-operating-hours-total-gen-heading div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0px;
+}
+
+.ess-container .ess-operating-hours-total-gen-values{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.ess-container .ess-operating-hours-total-gen-values::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 5px;
+    background-color: #4A4A4A;
+}
+
+.ess-container .ess-operating-hours-total-gen-values div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-right: 0px;
+}
+
+.ess-container .ess-right-row2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: black;
+    background: url('../assets/health-index.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #121212;
+}

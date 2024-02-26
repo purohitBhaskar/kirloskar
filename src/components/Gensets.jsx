@@ -6,10 +6,10 @@ const Gensets = () => {
     <div className="gensets-container">
       <div className="gensets-left-section">
         <div className="gensets-top-left">
-          <div className="capacity-status-strip">
+          {/* <div className="capacity-status-strip">
             <div className="capacity-status-strip-total-capacity">Total Capacity - 550kWh</div>
             <div className="capacity-status-strip-status">Status - Active</div>
-          </div>
+          </div> */}
         </div>
         <div className="gensets-bottom-left">
           <div className="gensets-stat-cards">
@@ -107,26 +107,114 @@ const Gensets = () => {
       </div>
 
       <div className="gensets-right-section">
-        <div className="gensets-right-row1">1</div>
-        <div className="gensets-right-row2">1</div>
+        <div className="gensets-right-row1">
+          <div className="gensets-operating-hours-total-gen-heading">
+            <div className=".operating-hours-heading">
+              Operating <br />Hours
+            </div>
+            <div className="total-generation-heading">Total <br />Generation</div>
+            <div className="voltage-l-n-heading">Total <br />Consumption</div>
+            <div className="current-heading" id='total-cost-heading'>Total <br />Cost</div>
+          </div>
+
+          <div className="gensets-operating-hours-total-gen-values">
+            <div className=".operating-hours-value">
+              426 hrs
+            </div>
+            <div className="total-generation-value">4673 kWh</div>
+            <div className="voltage-l-n-heading">3387 kWh</div>
+            <div className="current-heading" id='total-cost-heading'>Rs.10,000</div>
+          </div>
+          
+
+          
+
+          
+        </div>
+        <div className="gensets-right-row2"></div>
         <div className="gensets-right-row3">
-          <div className="gensets-right-row-power-phase"></div>
-          <div className="gensets-right-row-kW"></div>
-          <div className="gensets-right-row-kVA"></div>
+          <div className="gensets-right-row-power-phase">
+            <div className="power">Power</div>
+            <div className="phase-1">Phase 1</div>
+            <div className="phase-2">Phase 2</div>
+            <div className="phase-3">Phase 3</div>
+          </div>
+          <div className="gensets-right-row-kW">
+            <div className="power-unit">kW</div>
+            <div className="phase-1-values">120</div>
+            <div className="phase-2-values">240</div>
+            <div className="phase-3-values">400</div>
+          </div>
+          <div className="gensets-right-row-kVA">
+            <div className="power-unit">kVA</div>
+            <div className="phase-1-values">120</div>
+            <div className="phase-2-values">120</div>
+            <div className="phase-3-values">400</div>
+          </div>
 
         </div>
         <div className="gensets-right-row4">
-          <div className="gensets-voltage-current-phase-heading"></div>
-          <div className="gensets-l1-phase"></div>
-          <div className="gensets-l2-phase"></div>
-          <div className="gensets-l3-phase"></div>
+          <div className="gensets-voltage-current-phase-heading">
+            <div className="power-symbol-thunder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                <path d="M14.6925 17.787V17.287H14.1925H10.3036L15.7366 7.02451V13.278V13.778H16.2366H19.9272L14.6925 23.9832V17.787ZM0.609375 15.5325C0.609375 7.52705 7.10395 1.03247 15.1094 1.03247C23.1148 1.03247 29.6094 7.52705 29.6094 15.5325C29.6094 23.5379 23.1148 30.0325 15.1094 30.0325C7.10395 30.0325 0.609375 23.5379 0.609375 15.5325ZM2.61539 15.5325C2.61539 22.4218 8.22001 28.0265 15.1094 28.0265C21.9987 28.0265 27.6034 22.4218 27.6034 15.5325C27.6034 8.6431 21.9987 3.03848 15.1094 3.03848C8.22001 3.03848 2.61539 8.6431 2.61539 15.5325Z" fill="white" stroke="#272728" />
+              </svg>
+            </div>
+            <div className="voltage-l-l-heading">Voltage <br />(L-L)(V)</div>
+            <div className="voltage-l-n-heading">Voltage <br />(L-N)(V)</div>
+            <div className="current-heading" id='current-heading'>Current <br />(Amp)</div>
+          </div>
+          <div className="gensets-l1-phase">
+            <div className="thunder-phase">L1 Phase</div>
+            <div className="voltage-l-l-value-l-1">410</div>
+            <div className="voltage-l-n-value-l-1">230</div>
+            <div className="current-value-l-1">400</div>
+          </div>
+          <div className="gensets-l2-phase">
+            <div className="thunder-phase">L2 Phase</div>
+            <div className="voltage-l-l-value-l-2">410</div>
+            <div className="voltage-l-n-value-l-2">230</div>
+            <div className="current-value-l-2">400</div>
+          </div>
+          <div className="gensets-l3-phase">
+            <div className="thunder-phase">L3 Phase</div>
+            <div className="voltage-l-l-value-l-2">410</div>
+            <div className="voltage-l-n-value-l-2">230</div>
+            <div className="current-value-l-2">400</div>
+          </div>
         </div>
         <div className="gensets-right-row5">
           <div className="gensets-notification-heading">Notifications</div>
           <div className="gensets-notification-table">
-            <div className="gensets-notification-table-heading"></div>
-            <div className="gensets-notification-table-row-1"></div>
-            <div className="gensets-notification-table-row-2"></div>
+            <div className="gensets-notification-table-heading">
+              <div className="h1">Fault code</div>
+              <div className="h2">Description</div>
+              <div className="h3">Severity</div>
+              <div className="h4">Status</div>
+              <div className="h5">Date & Time</div>
+            </div>
+            <div className="gensets-notification-table-row-1">
+              <div className="r1-f-c">1234</div>
+              <div className="r1-description">Blockage Detected</div>
+              <div className="r1-severity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
+                  <ellipse cx="4.50251" cy="3.96187" rx="4.0943" ry="3.8874" fill="#F12D2D" />
+                </svg>
+                Shutdown</div>
+              <div className="r1-status">Open</div>
+              <div className="r1-date-time">21/12/23-10:23 AM</div>
+            </div>
+            <div className="gensets-notification-table-row-2">
+              <div className="r2-f-c">1234</div>
+              <div className="r2-description">Blockage Detected</div>
+              <div className="r2-severity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                  <ellipse cx="4.27985" cy="4.43159" rx="4.0943" ry="3.8874" fill="#F4DC0B" />
+                </svg>
+                Alert</div>
+              <div className="r2-status">Closed</div>
+              <div className="r2-date-time">21/12/23-10:23 AM</div>
+            </div>
           </div>
         </div>
       </div>

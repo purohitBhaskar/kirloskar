@@ -1,7 +1,7 @@
 .gensets-container {
 
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 15px;
     margin: 20px 12px;
 }
@@ -15,7 +15,7 @@
 
 .gensets-container .gensets-left-section {
     display: grid;
-    grid-template-rows: 1.4fr 0.8fr;
+    grid-template-rows: 1.4fr 1.2fr;
     /* 319 382 */
     gap: 13px;
 }
@@ -31,7 +31,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.gensets-container  .capacity-status-strip {
+.gensets-container .capacity-status-strip {
     position: absolute;
     width: 295.66px;
     height: 78px;
@@ -54,7 +54,7 @@
     color: #FFF;
 }
 
-.gensets-container  .capacity-status-strip-total-capacity {
+.gensets-container .capacity-status-strip-total-capacity {
 
     margin-top: 7px;
     margin-left: 12px;
@@ -93,6 +93,7 @@
 .gensets-container .gensets-bottom-left {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
+    padding-top: 5px;
 }
 
 .gensets-container .gensets-energy-meters {
@@ -111,15 +112,18 @@
 .gensets-container .gensets-soc-meter {
     border-radius: 10px;
     border: 4px solid #868686;
-    background: #FFF;
+    /* background: #FFF; */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .gensets-container .gensets-stat-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1.2fr);
+    grid-template-rows: repeat(3, 1.2fr);
     gap: 6px;
+    margin-top: 8px;
+    padding: 0;
+    height: 101%;
 }
 
 /* .gensets-container #gensets-stat-card-2{
@@ -282,300 +286,328 @@
     /* gap: 5px; */
 }
 
-.gensets-container .thermometer{
+.gensets-container .thermometer {
     height: 0;
     width: 0;
     margin-left: 5px;
 }
 
-.gensets-container .battery-temp{
+.gensets-container .battery-temp {
     height: 0;
     width: 0;
     margin-left: 5px;
     margin-top: 30px;
 }
 
-.gensets-container .reading{
+.gensets-container .reading {
     display: flex;
-width: 31px;
-height: 24px;
-flex-direction: row;
-justify-content: flex-end;
-flex-shrink: 0;
-color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-left: 65px;
-margin-top: 0;
+    width: 31px;
+    height: 24px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #0D81CD;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 65px;
+    margin-top: 0;
 }
 
-.gensets-container .gensets-stat-card{
+.gensets-container .gensets-stat-card {
     position: relative;
 
 
 }
 
-.gensets-container .utilization-factor{
+.gensets-container .utilization-factor {
     position: absolute;
     bottom: 0;
     left: 5px;
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 
-.gensets-container .utilization-factor-stat{
+.gensets-container .utilization-factor-stat {
     position: absolute;
     top: 5px;
     right: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.gensets-container .alerts-shutdown{
+.gensets-container .alerts-shutdown {
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-.gensets-container .warning-stat{
+.gensets-container .warning-stat {
     position: absolute;
     top: 5px;
     right: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.gensets-container .alerts-shutdown-stat{
+.gensets-container .alerts-shutdown-stat {
     position: absolute;
-    right:5px;
-    bottom:5px;
-    
+    right: 5px;
+    bottom: 5px;
+
 }
 
-.gensets-container .discharging-levels{
+.gensets-container .discharging-levels {
     position: absolute;
     bottom: 5px;
     left: 5px;
 
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.gensets-container .discharging-level-reading{
+.gensets-container .discharging-level-reading {
     position: absolute;
-    top:5px;
+    top: 5px;
     right: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
 }
 
-.gensets-container .frequency-symbol{
+.gensets-container .frequency-symbol {
     position: absolute;
     background: url("../assets/frequency.png");
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
 
 }
 
-.gensets-container .frequency-title{
+.gensets-container .frequency-title {
     position: absolute;
     bottom: 5px;
     left: 5px;
 }
 
-.gensets-container .frequency-value{
+.gensets-container .frequency-value {
     position: absolute;
     right: 5px;
     top: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.gensets-container .clock-symbol{
+.gensets-container .clock-symbol {
     position: absolute;
- 
+
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
-
-}
-
-.gensets-container .hours-operated-title{
-    position: absolute;
-    bottom: 5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
     left: 5px;
-    color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-
-.gensets-container .hours-operated-value{
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-
-.gensets-container .clock-symbol{
-    position: absolute;
- 
-    width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
 
 }
 
-.gensets-container .power-used-title{
+.gensets-container .hours-operated-title {
     position: absolute;
     bottom: 5px;
     left: 5px;
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.gensets-container .power-used-value{
+.gensets-container .hours-operated-value {
     position: absolute;
     right: 5px;
     top: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-
-.gensets-container .power-symbol{
+.gensets-container .clock-symbol {
     position: absolute;
- 
+
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
 
 }
 
-.gensets-container .battery-voltage-title{
+.gensets-container .power-used-title {
     position: absolute;
     bottom: 5px;
     left: 5px;
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.gensets-container .battery-voltage-value{
+.gensets-container .power-used-value {
     position: absolute;
     right: 5px;
     top: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 
-.gensets-container .battery-voltage-symbol{
+.gensets-container .power-symbol {
     position: absolute;
- 
+
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
 
 }
 
-.gensets-container .battery-level-title{
+.gensets-container .battery-voltage-title {
     position: absolute;
     bottom: 5px;
     left: 5px;
     color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.gensets-container .battery-level-value{
+.gensets-container .battery-voltage-value {
     position: absolute;
     right: 5px;
     top: 5px;
     color: #0D81CD;
-font-family: Inter;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 
-.gensets-container .battery-level-symbol{
+.gensets-container .battery-voltage-symbol {
     position: absolute;
- 
+
     width: 30px;
-height: 17.692px;
-flex-shrink: 0;
-top:5px;
-left:5px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
 
 }
+
+.gensets-container .battery-level-title {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.gensets-container .battery-level-value {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #0D81CD;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.gensets-container .battery-level-symbol {
+    position: absolute;
+
+    width: 30px;
+    height: 17.692px;
+    flex-shrink: 0;
+    top: 5px;
+    left: 5px;
+
+}
+
+.gensets-container .gensets-soc-meter {
+    position: relative;
+    height: 100%;
+    color: black;
+    background: url('../assets/fuel-meter.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.gensets-container .gensets-energy-consumption-meter {
+    position: relative;
+    height: 100%;
+    color: black;
+    background: url('../assets/energy-consumption-meter.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #010D25;
+}
+
+/* .gensets-container .soc-meter-img{
+    position: absolute;
+    
+
+} */
 
 
 /* .gensets-container . */
@@ -583,3 +615,188 @@ left:5px;
 /* 
 
  */
+
+.gensets-container .gensets-notification-table-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gensets-container .gensets-notification-table-heading div {
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+}
+
+.gensets-container .gensets-notification-table-row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.gensets-container .gensets-notification-table-row-1 div {
+    flex: 1;
+    text-align: center;
+    color: #4A4A4A;
+    ;
+}
+
+.gensets-container .gensets-notification-table-row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gensets-container .gensets-notification-table-row-2 div {
+    flex: 1;
+    text-align: center;
+    color: #4A4A4A;
+    ;
+}
+
+.gensets-container .gensets-right-row-kVA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gensets-container .gensets-right-row-kW {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.gensets-container .gensets-right-row-power-phase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.gensets-container .gensets-voltage-current-phase-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gensets-container .gensets-voltage-current-phase-heading div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+
+.gensets-container .gensets-l1-phase {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gensets-container .gensets-l1-phase div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 60px;
+}
+
+
+.gensets-container .gensets-l2-phase {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gensets-container .gensets-l2-phase div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 60px;
+}
+
+.gensets-container #current-heading {
+    margin-right: 50px;
+    padding: 0;
+}
+
+.gensets-container .gensets-l3-phase {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gensets-container .gensets-l3-phase div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 60px;
+}
+
+.gensets-container .gensets-operating-hours-total-gen-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.gensets-container .gensets-operating-hours-total-gen-heading div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 0px;
+}
+
+.gensets-container .gensets-operating-hours-total-gen-values{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.gensets-container .gensets-operating-hours-total-gen-values::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 5px;
+    background-color: #4A4A4A;
+}
+
+.gensets-container .gensets-operating-hours-total-gen-values div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-right: 0px;
+}
+
+.gensets-container .gensets-right-row2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: black;
+    background: url('../assets/health-index.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #121212;
+}
