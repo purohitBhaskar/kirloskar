@@ -5,7 +5,12 @@ const Solar = () => {
   return (
     <div className="solar-container">
       <div className="solar-left-section">
-        <div className="solar-left-section-rows" id='solar-img'></div>
+        <div className="solar-left-section-rows" id='solar-img'>
+          <div className="capacity-status-strip">
+            <div className="capacity-status-strip-total-capacity">Total Capacity - 550kWh</div>
+            <div className="capacity-status-strip-status">Status - Active</div>
+          </div>
+        </div>
         <div className="solar-left-section-rows" id='solar-vertical-card'>
           <div className="solar-vertical-card1">
             <div className="solar-vertical-card1-maintenance">Maintenace</div>
@@ -43,15 +48,21 @@ const Solar = () => {
           <div className="solar-notifications-row-2">
             <div className="fault-code-value">1234</div>
             <div className="description-value">Blockage Detected</div>
-            <div className="severity-value">Shutdown</div>
+            <div className="severity-value">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="9" viewBox="0 0 10 9" fill="none">
+                <ellipse cx="4.85035" cy="4.43272" rx="4.41456" ry="3.95812" fill="#F12D2D" />
+              </svg> Shutdown
+            </div>
             <div className="status-value">Open</div>
             <div className="date-time-value">21/12/23-10:23 AM</div>
           </div>
           <div className="solar-notifications-row-3">
             <div className="fault-code-value">1234</div>
             <div className="description-value">Blockage Detected</div>
-            <div className="severity-value">Shutdown</div>
-            <div className="status-value">Open</div>
+            <div className="severity-value"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="9" viewBox="0 0 10 9" fill="none">
+              <ellipse cx="4.83253" cy="4.6256" rx="4.41456" ry="3.95812" fill="#F4DC0B" />
+            </svg> Alert</div>
+            <div className="status-value"> &nbsp; &nbsp; &nbsp; &nbsp;  Closed</div>
             <div className="date-time-value">21/12/23-10:23 AM</div>
           </div>
         </div>
@@ -75,16 +86,61 @@ const Solar = () => {
           <div className="solar-kVA"></div>
         </div>
         <div className="solar-right-row3">
-          <div className="solar-operating-hours"></div>
-          <div className="solar-total-generation"></div>
-          <div className="solar-total-utilization"></div>
-          <div className="solar-total-savings"></div>
+          <div className="solar-operating-hours">
+            <div className="solar-operating-hours-heading">Operating <br />Hours</div>
+            <div className="solar-operating-hours-reading">426 hrs</div>
+          </div>
+          <div className="solar-total-generation">
+            <div className="solar-total-generation-heading">Total <br />Generation</div>
+            <div className="solar-total-generation-reading">473 kWh</div>
+          </div>
+          <div className="solar-total-utilization">
+            <div className="solar-total-utilization-heading">Total <br />Utilization</div>
+            <div className="solar-total-utilization-reading">387 kWh</div>
+          </div>
+          <div className="solar-total-savings">
+            <div className="solar-total-savings-heading">Total <br />Savings</div>
+            <div className="solar-total-savings-reading">Rs.10,000</div>
+          </div>
         </div>
         <div className="solar-right-row4">
-          <div className="current-voltage-heading"></div>
-          <div className="current-voltage-row1"></div>
-          <div className="current-voltage-row2"></div>
-          <div className="current-voltage-row3"></div>
+          <div className="current-voltage-heading">
+            <div className="spark-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="37" height="35" viewBox="0 0 37 35" fill="none">
+                <path d="M17.6842 20.3699V19.8699H17.1842H12.4087L19.1197 7.72614V15.2232V15.7232H19.6197H24.1573L17.6842 27.8124V20.3699ZM0.904297 17.7965C0.904297 8.64 8.66494 1.17532 18.2766 1.17532C27.8883 1.17532 35.649 8.64 35.649 17.7965C35.649 26.9531 27.8883 34.4177 18.2766 34.4177C8.66494 34.4177 0.904297 26.9531 0.904297 17.7965ZM3.48593 17.7965C3.48593 25.6411 10.1414 31.9866 18.2766 31.9866C26.4119 31.9866 33.0673 25.6411 33.0673 17.7965C33.0673 9.95195 26.4119 3.60643 18.2766 3.60643C10.1414 3.60643 3.48593 9.95195 3.48593 17.7965Z" fill="white" stroke="#272728" />
+              </svg>
+            </div>
+            <div className="L-L-V">
+              Voltage <br />(L-L)(V)
+
+            </div>
+            <div className="L-N-V">
+              Voltage <br />(L-L)(V)
+
+            </div>
+            <div className="current-amp">
+              Current <br />(Amp)
+
+            </div>
+          </div>
+          <div className="current-voltage-row1">
+            <div className="l-phase">L1 Phase</div>
+            <div className="voltage-1">410</div>
+            <div className="voltage-2">230</div>
+            <div className="current">400</div>
+          </div>
+          <div className="current-voltage-row2">
+            <div className="l-phase">L1 Phase</div>
+            <div className="voltage-1">410</div>
+            <div className="voltage-2">230</div>
+            <div className="current">400</div>
+          </div>
+          <div className="current-voltage-row3">
+            <div className="l-phase">L1 Phase</div>
+            <div className="voltage-1">410</div>
+            <div className="voltage-2">230</div>
+            <div className="current">400</div>
+          </div>
         </div>
       </div>
     </div>

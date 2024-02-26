@@ -30,7 +30,7 @@
 
 .biogas-container #biogas-vertical-card {
     display: grid;
-    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-columns: 177px 177px 177px 177px;
     gap: 8px;
 }
 
@@ -52,7 +52,8 @@
 
 .biogas-container .biogas-right-section {
     display: grid;
-    grid-template-rows: 1.3fr 1.18fr 1.2fr 1.31fr;
+    grid-template-rows: 1.3fr 1.18fr 1.205fr 1.315fr;
+    /* grid-template-rows: calc(205px / 692px)fr calc(127px / 692px)fr calc(142px / 692px)fr calc(218px / 692px)fr; */
     gap: 8px;
     margin-top: 18px;
 }
@@ -71,10 +72,14 @@
 /* 520.413 */
 
 .biogas-container .biogas-right-row2 {
-    grid-template-rows: 35px 35px 35px;
+    padding: 0;
+    margin: 0;
+    grid-template-rows: 50px 50px 50px;
+    padding: 3px;
+    gap: 5px;
 }
 
-.biogas-container .biogas-right-row2 + .biogas-right-row3{
+.biogas-container .biogas-right-row2+.biogas-right-row3 {
     margin-top: 10px;
 }
 
@@ -82,6 +87,7 @@
     border-radius: 10px 10px 0px 0px;
     background: #121212;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
 }
 
 .biogas-container .biogas-kW {
@@ -102,18 +108,20 @@
     border: 1px solid #1D1D1E;
     background: #141414;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* position: relative; */
 }
 
 .biogas-container .biogas-right-row2 {
+    padding-top: 5px;
     border-radius: 10px;
     background: #585858;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 100%;
+    /* height: 100%; */
 }
 
 .biogas-container .biogas-right-row3 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 142px 142px 142px 142px;
     gap: 8px;
 }
 
@@ -127,6 +135,8 @@
 }
 
 .biogas-container .biogas-right-row4 {
+    position: relative;
+    height: 218px;
     display: grid;
     grid-template-rows: 65px 50px 50px 50px;
     gap: 3px;
@@ -137,6 +147,7 @@
     border: 1px solid #272728;
     background: #121212;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px;
 }
 
 .biogas-container .current-voltage-row1 {
@@ -166,3 +177,808 @@
     background: #323233;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+.biogas-container .biogas-yesterday-stats-heading {
+    display: flex;
+    width: 103.472px;
+    height: 23.901px;
+    /* transform: rotate(90deg); */
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-left: 10px;
+    margin-top: 11px;
+    color: #FFF;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #1D1D1E;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biogas-container .biogas-yesterday-hours-operated {
+    display: flex;
+    width: 82.983px;
+    height: 38.61px;
+    /* transform: rotate(90deg); */
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-top: 33px;
+    margin-left: 10px;
+    color: #FFF;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #1D1D1E;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biogas-container .biogas-yesterday-power-generated {
+    display: flex;
+    width: 102.448px;
+    height: 56.076px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-left: 10px;
+    margin-top: 25px;
+    color: #FFF;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #1D1D1E;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.biogas-container .biogas-yesterday-hours-operated-reading {
+    display: flex;
+    /* position: absolute; */
+    width: 24.587px;
+    height: 26.659px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #0E89DB;
+    background-color: red;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #1D1D1E;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* margin-left: 135px; */
+    /* margin-bottom: 7px; */
+    /* padding-bottom: 120px; */
+}
+
+.biogas-container .biogas-vertical-card1 {
+    display: grid;
+    /* grid-template-rows: 23px 47px 55px; */
+    grid-template-rows: 0.18fr 0.376fr 0.44fr;
+    /* margin-left: 10px; */
+    gap: 14px;
+    padding: 12px;
+
+
+}
+
+.biogas-container .biogas-vartical-card1-maintenance {
+    width: 100%;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+.biogas-container .biogas-vertical-card1-last-date::after {
+    content: "5 Dec' 23";
+    color: #0E89DB;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.biogas-container .biogas-vertical-card1-next-due::after {
+    content: "5 Dec' 23";
+    color: #0E89DB;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* .biogas-container .biogas-vertical-card2 {
+    display: grid;
+    /* grid-template-rows: 23px 47px 55px; */
+/* grid-template-rows: 0.18fr 0.376fr 0.44fr; */
+/* margin-left: 10px; */
+/* gap: 14px; */
+/* padding: 12px; */
+
+
+/* } */
+.biogas-container .biogas-vertical-card2 {
+    display: grid;
+    grid-template-rows: 0.472fr 0.228fr 0.148fr 0.145fr;
+    gap: 8px;
+
+    /* 118 57 37 36*/
+}
+
+.biogas-container .biogas-vertical-card2-utilization-factor {
+    padding-top: 17px;
+    margin-left: 9px;
+    /* border: 1px solid; */
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.biogas-container .biogas-vertical-card2-utilization-factor-value {
+    color: #0E89DB;
+    font-family: Inter;
+    margin-left: 9px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.biogas-container .biogas-vertical-card2-power-factor {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-vertical-card2-power-factor-value {
+    display: flex;
+    width: 60.417px;
+    height: 35.968px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #0E89DB;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 10px;
+
+}
+
+.biogas-container .biogas-vertical-card3 {
+    display: grid;
+    grid-template-rows: 0.472fr 0.228fr 0.148fr 0.145fr;
+    gap: 8px;
+    /* padding: 0 0 10px 10px ; */
+
+    /* 118 57 37 36*/
+}
+
+
+.biogas-container .biogas-vertical-card3-notifications {
+    display: flex;
+    width: 129.167px;
+    height: 22.717px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+    margin-top: 12px;
+
+}
+
+.biogas-container .biogas-vertical-card3-alerts {
+    margin-left: 10px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-vertical-card3-alerts::after {
+    content: "5";
+    color: #0E89DB;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-vertical-card3-shutdowns {
+    margin-left: 10px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 20px;
+
+}
+
+.biogas-container .biogas-vertical-card3-shutdowns::after {
+    content: "2";
+    color: #0E89DB;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+
+.biogas-container .biogas-vertical-card4 {
+    display: grid;
+    grid-template-rows: 0.472fr 0.228fr 0.148fr 0.145fr;
+    gap: 8px;
+
+    /* 118 57 37 36*/
+}
+
+.biogas-container .biogas-vertical-card4-frequency {
+    padding-top: 17px;
+    margin-left: 9px;
+    /* border: 1px solid; */
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.biogas-container .biogas-vertical-card4-frequency-value {
+    color: #0E89DB;
+    font-family: Inter;
+    margin-left: 9px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.biogas-container .biogas-vertical-card4-breaker-status {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-vertical-card4-breaker-status-on-off-trip {
+    display: flex;
+    width: 60.417px;
+    height: 35.968px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #0E89DB;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 10px;
+
+}
+
+.biogas-container #notifications {
+    display: grid;
+    grid-template-rows: 0.176fr 0.27fr 0.27fr 0.27fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+.biogas-container .biogas-notifications-heading {
+    display: flex;
+    width: 157.728px;
+    height: 21.253px;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    margin-left: 14px;
+    margin-top: 5px;
+    color: #4A4A4A;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-notifications-row-1 {
+    /* width: 599.304px; */
+    height: 33.01px;
+    flex-shrink: 0;
+    background: #121212;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 5px;
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+
+}
+
+.biogas-container .biogas-notifications-row-2,
+.biogas-notifications-row-3 {
+    height: 33.01px;
+    flex-shrink: 0;
+    background: #FFF;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 5px;
+    text-align: center;
+    color: #4A4A4A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-notifications-row-2+.biogas-notifications-row-3 {
+    gap: 7px;
+}
+
+#biogas-img {
+    position: relative;
+}
+
+.biogas-container .capacity-status-strip {
+    position: absolute;
+    width: 295.66px;
+    height: 78px;
+    /* transform: rotate(90deg); */
+    flex-shrink: 0;
+    /* width: 100px; */
+    /* Adjust width as needed */
+    /* height: 20px; */
+    /* Adjust height as needed */
+    /* background-color: Adjust background color as needed */
+    border-radius: 10px;
+    /* opacity: 0.5; */
+    background: rgba(255, 255, 255, 0.3);
+    bottom: 0;
+    margin-bottom: 13px;
+    margin-left: 12px;
+    display: grid;
+    grid-template-rows: 28px 28px;
+    gap: 10px;
+    color: #FFF;
+}
+
+.biogas-container .capacity-status-strip-total-capacity {
+
+    margin-top: 7px;
+    margin-left: 12px;
+    display: flex;
+    width: 281px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF;
+}
+
+.biogas-container .capacity-status-strip-status {
+    margin-top: 3px;
+    margin-left: 12px;
+    display: flex;
+    width: 181.684px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-power-heading {
+    height: 35px;
+    flex-shrink: 0;
+
+    border-radius: 10px 10px 0px 0px;
+    background: #121212;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.biogas-container .biogas-kW {
+    height: 35px;
+    flex-shrink: 0;
+    background: #272728;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 4px;
+    border-radius: 0px;
+}
+
+.biogas-container .biogas-kVA {
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 10px 10px;
+    background: #272728;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 4px;
+}
+
+
+.biogas-container .biogas-operating-hours,
+.biogas-total-generation,
+.biogas-total-utilization, .biogas-total-savings {
+
+    grid-template-rows: 0.542fr 0.457fr;
+    gap: 23px;
+
+}
+
+.biogas-container .biogas-operating-hours-heading {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-operating-hours-reading {
+    display: flex;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 55px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+
+    color: #0E89DB;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.biogas-container .biogas-total-generation-heading {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.biogas-container .biogas-total-generation-reading {
+    display: flex;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 55px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+
+    color: #0E89DB;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.biogas-container .biogas-total-utilization-heading {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biogas-container .biogas-total-utilization-reading {
+display: flex;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 55px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+
+    color: #0E89DB;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;}
+
+.biogas-container .biogas-total-savings-heading {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biogas-container .biogas-total-savings-reading {
+
+    display: flex;
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 55px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+
+    color: #0E89DB;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.biogas-container .current-voltage-heading{
+    /* display: flex; */
+    display: inline-flex;
+    /* flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center; */
+    padding: 0px;
+}
+
+.biogas-container .spark-icon{
+    width: 35.745px;
+height: 34.242px;
+flex-shrink: 0;
+margin-left: 20px;
+margin-top: 15px;
+}
+
+.biogas-container .L-L-V{
+    display: flex;
+width: 90.894px;
+height: 45.468px;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+margin-left: 60px;
+padding: 0px;
+color: #FFF;
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #272728;
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 10px;
+}
+
+.biogas-container .L-N-V{
+    display: flex;
+width: 90.894px;
+height: 45.468px;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+margin-left: 146px;
+padding: 0px;
+color: #FFF;
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #272728;
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 10px;
+margin-left: 70px;
+}
+
+.biogas-container .current-amp{
+    display: flex;
+width: 90.894px;
+height: 45.468px;
+flex-direction: column;
+justify-content: flex-end;
+flex-shrink: 0;
+margin-left: 160px;
+padding: 0px;
+color: #FFF;
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #272728;
+font-family: Inter;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 10px;
+margin-left: 80px;
+}
+
+.biogas-container .current-voltage-row1{
+    padding-left: 5px;
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    line-height: 10;
+    color: #FFF;
+
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #272728;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.biogas-container .current-voltage-row2{
+    padding-left: 5px;
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    line-height: 10;
+    color: #FFF;
+
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #272728;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.biogas-container .current-voltage-row3{
+    padding-left: 5px;
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    line-height: 10;
+    color: #FFF;
+
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #272728;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+
+
+

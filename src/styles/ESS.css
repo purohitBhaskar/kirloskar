@@ -21,6 +21,7 @@
 }
 
 .ess-container .ess-top-left {
+    position: relative;
     border-radius: 10px;
     border: 1px solid #2C2B2B;
     background: url('../assets/ess.jpg'), lightgray 50%;
@@ -28,6 +29,65 @@
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ess-container  .capacity-status-strip {
+    position: absolute;
+    width: 295.66px;
+    height: 78px;
+    /* transform: rotate(90deg); */
+    flex-shrink: 0;
+    /* width: 100px; */
+    /* Adjust width as needed */
+    /* height: 20px; */
+    /* Adjust height as needed */
+    /* background-color: Adjust background color as needed */
+    border-radius: 10px;
+    /* opacity: 0.5; */
+    background: rgba(255, 255, 255, 0.3);
+    bottom: 0;
+    margin-bottom: 13px;
+    margin-left: 12px;
+    display: grid;
+    grid-template-rows: 28px 28px;
+    gap: 10px;
+    color: #FFF;
+}
+
+.ess-container  .capacity-status-strip-total-capacity {
+
+    margin-top: 7px;
+    margin-left: 12px;
+    display: flex;
+    width: 281px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF;
+}
+
+.ess-container .capacity-status-strip-status {
+    margin-top: 3px;
+    margin-left: 12px;
+    display: flex;
+    width: 181.684px;
+    height: 28px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
 }
 
 .ess-container .ess-bottom-left {
@@ -67,6 +127,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     width: 118px;
     height: 105px;
+    border: 5px solid #868686;
 
 }
 
@@ -213,3 +274,305 @@
     margin-top: 0px;
     /* gap: 5px; */
 }
+
+.ess-container .thermometer{
+    height: 0;
+    width: 0;
+    margin-left: 5px;
+}
+
+.ess-container .battery-temp{
+    height: 0;
+    width: 0;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+
+.ess-container .reading{
+    display: flex;
+width: 31px;
+height: 24px;
+flex-direction: row;
+justify-content: flex-end;
+flex-shrink: 0;
+color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 65px;
+margin-top: 0;
+}
+
+.ess-container .ess-stat-card{
+    position: relative;
+
+
+}
+
+.ess-container .utilization-factor{
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+.ess-container .utilization-factor-stat{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.ess-container .alerts-shutdown{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.ess-container .warning-stat{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.ess-container .alerts-shutdown-stat{
+    position: absolute;
+    right:5px;
+    bottom:5px;
+    
+}
+
+.ess-container .discharging-levels{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.ess-container .discharging-level-reading{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+.ess-container .frequency-symbol{
+    position: absolute;
+    background: url("../assets/frequency.png");
+    width: 30px;
+height: 17.692px;
+flex-shrink: 0;
+top:5px;
+left:5px;
+
+}
+
+.ess-container .frequency-title{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.ess-container .frequency-value{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.ess-container .clock-symbol{
+    position: absolute;
+ 
+    width: 30px;
+height: 17.692px;
+flex-shrink: 0;
+top:5px;
+left:5px;
+
+}
+
+.ess-container .hours-operated-title{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.ess-container .hours-operated-value{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.ess-container .clock-symbol{
+    position: absolute;
+ 
+    width: 30px;
+height: 17.692px;
+flex-shrink: 0;
+top:5px;
+left:5px;
+
+}
+
+.ess-container .power-used-title{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.ess-container .power-used-value{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+.ess-container .power-symbol{
+    position: absolute;
+ 
+    width: 30px;
+height: 17.692px;
+flex-shrink: 0;
+top:5px;
+left:5px;
+
+}
+
+.ess-container .battery-voltage-title{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.ess-container .battery-voltage-value{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+.ess-container .battery-voltage-symbol{
+    position: absolute;
+ 
+    width: 30px;
+height: 17.692px;
+flex-shrink: 0;
+top:5px;
+left:5px;
+
+}
+
+.ess-container .battery-level-title{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.ess-container .battery-level-value{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #0D81CD;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+.ess-container .battery-level-symbol{
+    position: absolute;
+ 
+    width: 30px;
+height: 17.692px;
+flex-shrink: 0;
+top:5px;
+left:5px;
+
+}
+
+
+/* .ess-container . */
+
+/* 
+
+ */
