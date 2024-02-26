@@ -4,7 +4,7 @@ import "../styles/Alerts.css"
 const Alerts = () => {
   return (
     <div className='alerts-section'>
-
+      
     </div>
   )
 }

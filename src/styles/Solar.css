@@ -67,6 +67,7 @@
     grid-template-columns: 0.678fr 0.320fr;
     gap: 8px;
     height: 100%;
+    position: relative;
 }
 
 /* 520.413 */
@@ -97,13 +98,21 @@
 }
 
 .solar-container .solar-bar-graph {
-
+    position: relative;
     border-radius: 10px;
     background: #141414;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: url("../assets/energy-bar-chart.png");
+    background-size:cover;
+    background-position:right;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-right: 10px;
 }
 
+
 .solar-container .solar-yesterday-stats {
+    position: relative;
     border-radius: 10px;
     border: 1px solid #1D1D1E;
     background: #141414;
@@ -981,4 +990,62 @@ line-height: normal;
 
 
 
+
+.solar-container .solar-right-row-kVA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #272728;
+    height: 33%;
+    border-radius: 0px 10px ;
+    margin-top: 2px;
+
+}
+
+.solar-container .solar-right-row-kW {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #272728;
+    height: 33%;
+    border-radius: 0px;
+    margin-top: 3px;
+
+}
+
+
+.solar-container .solar-right-row-power-phase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #121212;
+    height: 33%;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+
+.solar-container .solar-yesterday-hours-operated-reading{
+    position: absolute;
+    top: 70px;
+    background: none;
+right: 0;}
+
+.solar-container .solar-yesterday-power-generated-reading{
+    position: absolute;
+    right: 5px;
+    color: #0E89DB;
+    font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    bottom: 40px
+}
 

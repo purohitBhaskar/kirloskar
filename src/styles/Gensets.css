@@ -119,9 +119,9 @@
 .gensets-container .gensets-stat-cards {
     display: grid;
     grid-template-columns: repeat(3, 1.2fr);
-    grid-template-rows: repeat(3, 1.2fr);
-    gap: 6px;
-    margin-top: 8px;
+    grid-template-rows: repeat(3, 1.5fr);
+    /* gap: 2px 2px; */
+    /* margin-top: 8px; */
     padding: 0;
     height: 101%;
 }

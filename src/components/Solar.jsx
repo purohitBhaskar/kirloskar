@@ -76,14 +76,32 @@ const Solar = () => {
             <div className="solar-yesterday-power-generated">
               Power <br />Generated <br />(kWh)
             </div>
-            {/* <div className="solar-yesterday-hours-operated-reading">4</div> */}
-            {/* <div className="solar-yesterday-power-generated-reading">24</div> */}
+            <div className="solar-yesterday-hours-operated-reading">4</div>
+            <div className="solar-yesterday-power-generated-reading">24</div>
           </div>
         </div>
         <div className="solar-right-row2">
-          <div className="solar-power-heading"></div>
+          {/* <div className="solar-power-heading"></div>
           <div className="solar-kW"></div>
-          <div className="solar-kVA"></div>
+          <div className="solar-kVA"></div> */}
+          <div className="solar-right-row-power-phase">
+            <div className="power">Power</div>
+            <div className="phase-1">Phase 1</div>
+            <div className="phase-2">Phase 2</div>
+            <div className="phase-3">Phase 3</div>
+          </div>
+          <div className="solar-right-row-kW">
+            <div className="power-unit">kW</div>
+            <div className="phase-1-values">120</div>
+            <div className="phase-2-values">240</div>
+            <div className="phase-3-values">400</div>
+          </div>
+          <div className="solar-right-row-kVA">
+            <div className="power-unit">kVA</div>
+            <div className="phase-1-values">120</div>
+            <div className="phase-2-values">120</div>
+            <div className="phase-3-values">400</div>
+          </div>
         </div>
         <div className="solar-right-row3">
           <div className="solar-operating-hours">

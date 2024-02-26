@@ -76,14 +76,32 @@ const Mains = () => {
             <div className="mains-yesterday-power-generated">
               Power <br />Generated <br />(kWh)
             </div>
-            {/* <div className="mains-yesterday-hours-operated-reading">4</div> */}
-            {/* <div className="mains-yesterday-power-generated-reading">24</div> */}
+            <div className="mains-yesterday-hours-operated-reading">4</div>
+            <div className="mains-yesterday-power-generated-reading">24</div>
           </div>
         </div>
         <div className="mains-right-row2">
-          <div className="mains-power-heading"></div>
+          {/* <div className="mains-power-heading"></div>
           <div className="mains-kW"></div>
-          <div className="mains-kVA"></div>
+          <div className="mains-kVA"></div> */}
+          <div className="mains-right-row-power-phase">
+            <div className="power">Power</div>
+            <div className="phase-1">Phase 1</div>
+            <div className="phase-2">Phase 2</div>
+            <div className="phase-3">Phase 3</div>
+          </div>
+          <div className="mains-right-row-kW">
+            <div className="power-unit">kW</div>
+            <div className="phase-1-values">120</div>
+            <div className="phase-2-values">240</div>
+            <div className="phase-3-values">400</div>
+          </div>
+          <div className="mains-right-row-kVA">
+            <div className="power-unit">kVA</div>
+            <div className="phase-1-values">120</div>
+            <div className="phase-2-values">120</div>
+            <div className="phase-3-values">400</div>
+          </div>
         </div>
         <div className="mains-right-row3">
           <div className="mains-operating-hours">
