@@ -1,0 +1,604 @@
+.overview-container {
+    border: 1px solid white;
+    height: 87%;
+    margin: 20px 15px;
+    display: grid;
+    grid-template-columns: 1.056fr 1fr;
+    gap: 10px;
+}
+
+.overview-container .overview-section-left-section {
+    /* border: 1px solid red; */
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1.18fr 1fr;
+
+    .overview-img-section {
+
+
+        background: url("../assets/overview-plants.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+
+    }
+
+    .overview-overview-table-section {
+        .overview-table-heading {
+            display: flex;
+            width: 213px;
+            height: 24px;
+            flex-direction: column;
+            justify-content: flex-end;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .overview-table-body {
+            /* margin-top: 25px; */
+            display: grid;
+            /* border: 1px solid blue; */
+            grid-template-rows: repeat(7, 38px);
+            gap: 6px;
+
+            .table-body-row {
+                /* border: 1px solid red; */
+                background: #FFF;
+                color: #4A4A4A;
+
+            }
+
+            #row-1 {
+                border-radius: 10px 10px 0px 0px;
+                background: #121212;
+                color: #FFF;
+            }
+
+            .table-body-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    /* background: pink; */
+                }
+
+                .heading-energy-source {
+                    display: flex;
+                    width: 141.767px;
+                    height: 25.13px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-shrink: 0;
+                    padding-left: 10px;
+                }
+
+                .heading-operating-hours {
+                    display: flex;
+                    width: 152.225px;
+                    height: 25.13px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-shrink: 0;
+                }
+
+                .heading-power-generated {
+                    display: flex;
+                    width: 150.683px;
+                    height: 25.13px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-shrink: 0;
+                    margin-right: 20px;
+                }
+
+                .heading-cost {
+                    display: flex;
+                    width: 78.641px;
+                    height: 16.055px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-shrink: 0;
+                    padding-right: 10px;
+                }
+
+                .values-power-generated-row {
+                    display: flex;
+                    width: 96.863px;
+                    height: 25.259px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-shrink: 0;
+                }
+
+                .values-operating-hours-value-row {
+                    display: flex;
+                    width: 66.174px;
+                    height: 21.217px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-shrink: 0;
+                }
+
+                .values-energy-source-row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 70px;
+                    padding: 0px;
+                    margin-left: 0;
+                    margin-right: 30px;
+                }
+
+                .values-cost-row {
+                    padding-right: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 10px;
+                    margin-left: 0px;
+                    padding-left: 0px;
+
+                }
+            }
+
+        }
+    }
+
+}
+
+.overview-container .overview-section-right-section {
+    grid-template-rows: 1.26fr 2.10fr 1fr;
+    /* border: 1px solid red; */
+    /* background: blue; */
+    gap: 10px;
+    height: 100%;
+
+    #row1 {
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: 1.7fr 1fr;
+        gap: 8px;
+
+        div {
+            background: #121212;
+            height: 198px;
+        }
+    }
+
+    #row2 {
+        display: grid;
+        grid-template-columns: 1fr 2.468fr;
+        height: auto;
+        padding-top: 8px;
+        gap: 8px;
+        /* background: pink; */
+        height: 364px;
+
+
+        .vertical-cards {
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            gap: 8px;
+            height: 100%;
+
+            .vertical-card-1,
+            .vertical-card-2,
+            .vertical-card-3,
+            .vertical-card-4 {
+                border-radius: 10px;
+                background: #121212;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                height: 110px;
+            }
+
+            .vertical-card-1 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                padding: 15px;
+
+                .total-operating-hours-title {
+                    color: #FFF;
+
+                    font-family: Inter;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .total-operating-hours-value {
+                    color: #0E89DB;
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            .vertical-card-2,
+            .vertical-card-3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-left: 10px;
+
+                .mains {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .operated-yesterday {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .hours {
+                    color: #0E89DB;
+                    font-family: Inter;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+
+
+        }
+
+        .horizontal-cards-pie-chart {
+            /* background-color: pink; */
+            display: grid;
+            grid-template-rows: 1.1fr 1fr;
+            height: 346px;
+
+            .horizontal-cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 8px;
+                height: 176px;
+
+                div {
+                    background: #121212;
+                    border-radius: 10px;
+                    height: 100%;
+                }
+
+                .horizontal-card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                    /* align-items: center; */
+                    padding: 10px;
+                    /* padding-left: 15px; */
+                    padding-top: 25px;
+
+
+                    .energy-stored-title {
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        display: flex;
+                        flex-direction: row;
+                        /* background-color: peachpuff; */
+                        width: 100%;
+                    }
+
+                    .energy-stored-value {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        margin-top: 5px;
+                        /* background-color: red; */
+                    }
+
+                    .soc-ess-title {
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+
+                    .soc-ess-value {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    .alerts-title {
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                    }
+
+                    .alerts-value {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    .shutdowns-title {
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-top: 20px;
+                    }
+
+                    .shutdowns-value {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                }
+
+                #card-2 {
+                    padding-left: 15px;
+                    justify-content: space-between;
+                }
+
+            }
+
+            .pie-chart {
+                background: url("../assets/overview-pie-chart.png");
+                border-radius: 10px;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
+    }
+
+    #row3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        /* background: peachpuff; */
+        height: 160px;
+
+        .power-table {
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+
+
+
+            .power-heading {
+                background-color: #121212;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 15px;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            .avg-power-kW {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                /* padding-left: 5px; */
+                padding-right: 15px;
+                /* background: #000; */
+                background: #272728;
+
+                /* div{
+                    background-color: peachpuff;
+                } */
+                .avg-power-kW-value {
+                    margin-left: 20px;
+                    width: 87px;
+                    padding-left: 20px;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .avg-power-kW-title {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+            }
+
+            .avg-power-kVA {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                /* padding-left: 5px; */
+                /* background: #000; */
+                border-radius: 0px 0px 10px 10px;
+                background: #323233;
+                padding-right: 20px;
+
+                .avg-power-kVA-value {
+                    margin-left: 20px;
+                    width: 87px;
+                    padding-left: 20px;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .avg-power-kVA-title {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .current-table {
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            /* padding: 5px; */
+
+
+
+            .current-heading {
+                background-color: #121212;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 20px;
+                padding-left: 15px;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 10px 10px 0px 0px;
+                color: #FFF;
+
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                .avg-current-title {
+                    color: #FFF;
+
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+
+            .avg-voltage-l-l {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                /* padding-left: 5px; */
+                padding-right: 15px;
+                /* background: #000; */
+                background: #272728;
+
+                /* div{
+                    background-color: peachpuff;
+                } */
+                .avg-voltage-l-l-value {
+                    margin-left: 20px;
+                    width: 87px;
+                    padding-left: 30px;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .avg-voltage-l-l-title {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+            }
+
+            .avg-voltage-l-n {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                /* padding-left: 5px; */
+                /* background: #000; */
+                border-radius: 0px 0px 10px 10px;
+                background: #323233;
+                padding-right: 20px;
+
+                .avg-voltage-l-n-value {
+                    margin-left: 20px;
+                    width: 87px;
+                    padding-left: 30px;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .avg-voltage-l-n-title {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    /* margin-left: 10px; */
+                    /* padding-left: 10px; */
+                }
+            }
+        }
+
+    }
+
+
+}

@@ -54,6 +54,7 @@
 
         div {
             margin-top: 15px;
+            box-shadow: none;
         }
 
 
@@ -68,6 +69,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    /* box-shadow:#0E89DB; */
 }
 
 .solar-container .maintenance-last-date {
@@ -79,7 +81,6 @@
     font-weight: 500;
     line-height: normal;
     margin-top: 15px;
-
     .last-date-value {
         color: #0E89DB;
         font-family: Inter;
@@ -87,6 +88,8 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        box-shadow: none;
+
     }
 }
 
@@ -332,9 +335,9 @@
         div {
             border-radius: 10px;
             background: #141414;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
         }
-        
+
 
         .yesterday-stats {
             display: flex;
@@ -794,8 +797,7 @@
 }
 
 .solar-container .solar-right-section-row1 {
-    .pie-chart{
-        background: url("../assets/energy-bar-chart.png");
+    .pie-chart {
+        background: url("C:\Users\Asus\Desktop\kirloskar\src\assets\energy-bar-chart.png");
     }
 }
-
