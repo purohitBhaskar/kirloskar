@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 10px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .gensets-container * {
@@ -16,7 +16,7 @@
 
 .gensets-container {
     .sections {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         /* border-radius: 10px; */
 
     }
@@ -26,7 +26,7 @@
         grid-template-rows: 1.18fr 1fr;
 
         div {
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
         }
 
         .gensets-img-section {
@@ -43,11 +43,214 @@
                 display: grid;
                 grid-template-rows: repeat(3, 1.13fr);
                 grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
             }
 
             .meter-tables {
                 display: grid;
                 grid-template-rows: 1fr 1.17fr;
+
+                .energy-consumption-table {
+                    background: url("../assets/energy-consumption-meter.png");
+                    background-size: contain;
+                    background-position: center;
+                }
+
+                .soc-meter-table {
+                    background: url("../assets/fuel-meter.png");
+                    background-size: contain;
+                }
+            }
+        }
+
+        .stats-cards {
+            div {
+                background: #121212;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border: 5px solid #878687;
+            }
+
+            .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+                background: #121212;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                border: 5px solid #878687;
+                padding: 5px;
+
+                div {
+                    border: 0px;
+                    font-family: Inter;
+                }
+
+                .temperature-icon {
+                    /* fill: rgba(0, 0, 0, 0.00); */
+                    /* height: 35px; */
+                    /* width: 35px; */
+                    /* background: rebeccapurple; */
+                    border: 0px;
+                    padding-right: 5px;
+                    padding-top: 5px;
+
+                }
+
+                .coolant-percentage {
+                    position: absolute;
+                    color: #0D81CD;
+                    /* background: red; */
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    /* line-height: normal; */
+                    width: 42px;
+                    right: 5px;
+                    top: 5px;
+                }
+
+                .coolant-temp-text {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    position: absolute;
+                    width: 96px;
+                    bottom: 5px;
+                }
+            }
+
+            .card7{
+                .temperature-icon{
+                    /* background-color: red; */
+                    border-radius: 0px;
+                    svg{
+                        border-radius: 0px;
+                    }
+                }
+            }
+            .card3{
+                div{
+                    position: absolute;
+                    
+                }
+                .alerts-icon{
+                    /* position: absolute; */
+                    top: 5px;
+                    left: 5px;
+                    border-radius: 0px;
+                    /* width: 30px; */
+                    /* background: red; */
+                    
+                }
+                .total-value{
+                    /* position: absolute; */
+                    top: 5px;
+                    right: 5px;
+                    /* background: blue; */
+                    color: #0D81CD;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .alerts-text{
+                    bottom: 30px;
+                    left: 5px;
+                    /* background: yellow; */
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .alerts-value{
+                    right: 5px;
+                    bottom: 30px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .shutdowns-text{
+                    bottom:10px;
+                    left: 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .shutdowns-value{
+                    bottom: 10px;
+                    right: 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .card4{
+                div{
+                    position: absolute;
+
+                }
+                .coolant-percentage{
+                    font-size: 22px;
+                    font-weight: 600;
+                    right: 0;
+                    top: 5px;
+                }
+            }
+            .card5{
+                padding: 0;
+                div{
+                    position: absolute;
+                }
+                .temperature-icon{
+                    left: 5px;
+                }
+                .coolant-percentage{
+                    right: 0;
+                    padding: 0;
+                    font-size: 22px;
+                }
+                .coolant-temp-text{
+                    font-size: 14px;
+                    font-weight: 500;
+                    bottom: 5px;
+                    padding: 0;
+                }
+            }
+            .card6{
+                padding: 0;
+                div{
+                    position: absolute;
+                }
+                .coolant-percentage{
+                    right: 35px;
+                    width: 0;
+                }
+                .temperature-icon{
+                    left: 5px;
+                }
+                .coolant-temp-text{
+                    font-size: 12px;
+                    font-weight: 500;
+                    width: 0;
+                    height: 0;
+                    top: 40px;
+                    left: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    font-family: Inter;
+                }
+            }
+            .card8, .card9{
+                div{
+                    position: absolute;
+                }
+                .utilization-factor-title{
+                    top:50px;
+                    width: 0;
+                    height: 0;
+                    font-size: 14px;
+                    font-family: Inter;
+                }
+                .utilization-factor-value{
+                    color:#0D81CD;
+                    font-size: 20px;
+                    top: 5px;
+                    right: 5px;
+                }
             }
         }
     }
@@ -56,7 +259,7 @@
 
     #right-section {
         display: grid;
-        grid-template-rows: 106px 93px 127px 186px auto;
+        grid-template-rows: 106px 93px 127px 186px 170px;
         gap: 8px;
 
         #row1 {
@@ -162,10 +365,244 @@
                 height: 35px;
                 align-items: center;
             }
-            .kVA-phase-values{
+
+            .kVA-phase-values {
                 border-radius: 0px 0px 10px 10px;
             }
 
+            .kVA-phase-values+.kW-phase-values {
+                gap: 1px;
+            }
+
+        }
+
+        #row4 {
+            display: grid;
+            grid-template-rows: 55px 44px 44px 44px;
+            gap: 2px;
+            padding-top: 0;
+
+            .phase-power-voltage-headings {
+                display: flex;
+                flex-direction: row;
+                /* justify-content: space-around; */
+                align-items: center;
+
+                div {
+                    /* background-color: red; */
+                    margin-left: 30px;
+                    display: flex;
+
+                }
+
+                .v-l-n-heading {
+                    width: 90px;
+                    /* height: 100%; */
+                }
+
+                .v-l-l-heading {
+                    width: 90px;
+                }
+
+                .current-heading {
+                    /* width: 80px; */
+                    padding: 0px;
+                    margin-right: 15px;
+                }
+            }
+
+            .phase-values-l1,
+            .phase-values-l2,
+            .phase-values-l3 {
+                color: #FFF;
+                -webkit-text-stroke-width: 1;
+                -webkit-text-stroke-color: #272728;
+                font-family: Inter;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                div {
+                    /* background-color: blue; */
+                    margin-right: 60px;
+                }
+
+                justify-content: space-evenly;
+            }
+
+            .phase-power-voltage-headings {
+                border-radius: 10px 10px 0px 0px;
+                border: 1px solid #272728;
+                background: #121212;
+                padding-top: 0px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                margin-top: 2px;
+
+                .thunder {
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                        fill: #FFF;
+                        stroke-width: 1px;
+                        stroke: #272728;
+                    }
+                }
+
+                .v-l-l-heading {
+                    position: absolute;
+                    /* background-color: blue; */
+                    width: 100px;
+                    display: flex;
+                    justify-content: right;
+                    margin-left: 150px;
+
+                }
+
+                .v-l-n-heading {
+                    position: absolute;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-left: 290px;
+                }
+
+                .current-heading {
+                    position: absolute;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-left: 440px;
+                }
+
+                div {
+                    /* background-color: red; */
+                    color: #FFF;
+                    text-align: center;
+                    -webkit-text-stroke-width: 1;
+                    -webkit-text-stroke-color: #272728;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin-right: 30px;
+
+                }
+
+            }
+
+            .phase-values-l1,
+            .phase-values-l2,
+            .phase-values-l3 {
+                .v-l-l-values {
+                    margin-left: 50px;
+                }
+
+                .current-value {
+                    /* background-color: green; */
+                    margin-right: 10px;
+                }
+            }
+
+            .phase-values-l1 {
+                border: 1px solid #272728;
+                background: #1D1D1E;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 0px;
+            }
+
+            .phase-values-l2 {
+                border: 1px solid #272728;
+                background: #272728;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 0px;
+            }
+
+            .phase-values-l3 {
+                border-radius: 0px 0px 10px 10px;
+                border: 1px solid #272728;
+                background: #323233;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                margin-bottom: 8px;
+
+            }
+        }
+
+        #row5 {
+            display: grid;
+            grid-template-rows: 25px 35px 35px 35px;
+            border-radius: 10px;
+            border: 1px solid #A8A8A8;
+            background: #C8C7C7;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            gap: 5px;
+            position: absolute;
+            bottom: 25px;
+
+            padding: 10px;
+
+            .notification-heading {
+                display: flex;
+                width: 181.173px;
+                /* color: red; */
+                /* height: 21.381px; */
+                /* transform: rotate(90deg); */
+                flex-direction: column;
+                justify-content: left;
+                align-items: center;
+                flex-shrink: 0;
+                /* padding-top: 10px; */
+                padding-right: 5px;
+                color: #4A4A4A;
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            .notifications-heading-row {
+
+                background: #010D25;
+                padding: 10px;
+                border-radius: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 503px;
+                /* margin-top: 5px; */
+                padding-top: 15px;
+
+                div {
+                    /* background: blue */
+
+                }
+            }
+
+            .notifications-data-row1,
+            .notifications-data-row2 {
+                /* margin-top: 5px; */
+                background: #FFF;
+                border-radius: 0px;
+                color: #010D25;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+
+                div {
+                    color: #4A4A4A;
+                    font-family: Inter;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    /* background: red; */
+                }
+            }
         }
     }
 }
