@@ -27,7 +27,7 @@ function App() {
       </header>
 
       <Routes>
-        <Route path="/" element={<Overview />} />
+        <Route path="/overview" element={<Overview />} />
         <Route path="/solar" element={<Solar/>} />
         <Route path="/wind" element={<Wind/>} />
         <Route path="/biogas" element={<Biogas />} />
@@ -35,7 +35,7 @@ function App() {
         <Route path="/mains" element={<Mains />} />
         <Route path="/gensets" element={<Gensets />} />
         <Route path="/alerts" element={<Alerts />} />
-        <Route path="/" element={<Navigate to="/overview" />} />
+        <Route path="/" element={<Overview/>} />
       </Routes>
     </Router>
 
