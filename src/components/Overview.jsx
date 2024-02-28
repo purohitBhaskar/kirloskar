@@ -57,8 +57,21 @@ const Overview = () => {
       </div>
       <div className="overview-section-right-section">
         <div className="overview-right-row" id="row1">
-          <div className="bar-chart">bar chart</div>
-          <div className="total-energy-card">total energy</div>
+          <div className="bar-chart">
+            <div className="bar-chart-img"></div>
+          </div>
+          <div className="total-energy-card">
+            <div className="titles">
+              <div className="total-energy-generated-title">Total Energy Generated</div>
+              <div className="total-energy-generated-r-r">From <br />Renewable <br /> Resources</div>
+              <div className="total-energy-generated-n-r-r">From <br /> Non-Renewable <br /> Resources</div>
+            </div>
+            <div className="values">
+              <div className="total-energy-generated-value">574680 <span className='unit'>(kWh)</span></div>
+              <div className="total-energy-generated-r-r-value">317138 <span className='unit'>(kWh)</span></div>
+              <div className="total-energy-generated-n-r-r-value">257542 <span className='unit'>(kWh)</span></div>
+            </div>
+          </div>
         </div>
         <div className="overview-right-row" id="row2">
           <div className="vertical-cards">
@@ -93,7 +106,7 @@ const Overview = () => {
               </div>
               <div className="horizontal-card" id="card-3">
                 <div className="savings-title">Savings</div>
-                <div className="savings-value-per-month">40,000</div>
+                <div className="savings-value-per-month">INR 40,000</div>
                 <div className="savings-title-per-month">(per month)</div>
                 <div className="savings-value-till-date">INR 2,50,000</div>
                 <div className="savings-title-till-date">(till date)</div>

@@ -1,5 +1,5 @@
 .overview-container {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 87%;
     margin: 20px 15px;
     display: grid;
@@ -169,6 +169,123 @@
         div {
             background: #121212;
             height: 198px;
+            border-radius: 10px;
+        }
+
+        .bar-chart-img {
+            background: url("../assets/energy-bar-chart.png");
+            background-size: cover;
+            background-position: right;
+            border-radius: 10px;
+
+
+        }
+
+        .total-energy-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .titles {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                padding-left: 10px;
+
+                div {
+                    /* background-color: red; */
+                    height: 20px;
+                    width: 120px;
+                    margin-bottom: 30px;
+                }
+
+                .total-energy-generated-title {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .total-energy-generated-r-r,
+                .total-energy-generated-n-r-r {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 35px;
+                }
+            }
+
+            .values {
+                display: flex;
+                flex-direction: column;
+                .total-energy-generated-value {
+                    color: #0E89DB;
+                    text-align: right;
+                    font-family: Inter;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-right: 15px;
+                    margin-top: 15px;
+
+                    .unit {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+
+                .total-energy-generated-r-r-value {
+                    color: #0E89DB;
+                    text-align: right;
+                    font-family: Inter;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-right: 15px;
+                    .unit {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                }
+
+                .total-energy-generated-n-r-r-value {
+                    color: #0E89DB;
+                    text-align: right;
+                    font-family: Inter;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-right: 15px;
+                    margin-top: 15px;
+                    .unit {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                }
+            }
         }
     }
 
@@ -373,6 +490,62 @@
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
+                    }
+
+                    .savings-title {
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                    }
+
+                    .savings-value-per-month {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin-top: 10px;
+                        /* background-color: peachpuff; */
+                        height: 20px;
+                    }
+
+                    .savings-title-per-month {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-bottom: 12px;
+                        padding: 0;
+                        /* background-color: red; */
+                    }
+
+                    .savings-title-till-date {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    .savings-value-till-date {
+                        color: #0E89DB;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        /* background-color: peachpuff; */
+                        width: 100%;
+                        height: 17px;
+
                     }
 
                 }
